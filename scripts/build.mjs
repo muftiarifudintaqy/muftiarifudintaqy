@@ -89,7 +89,7 @@ function summarize(days) {
 // ---------------- stats tiles ----------------
 function cube(x, y, col) {
   const c = mix(col);
-  return `<g transform="translate(${x} ${y})"><polygon points="0,-7 8,-3 0,1 -8,-3" fill="${rgb(c, 1.15)}"/><polygon points="-8,-3 0,1 0,10 -8,6" fill="${rgb(c, 0.7)}"/><polygon points="8,-3 0,1 0,10 8,6" fill="${rgb(c, 0.9)}"/></g>`;
+  return `<g transform="translate(${x} ${y})"><g class="fl"><polygon points="0,-7 8,-3 0,1 -8,-3" fill="${rgb(c, 1.15)}"/><polygon points="-8,-3 0,1 0,10 -8,6" fill="${rgb(c, 0.7)}"/><polygon points="8,-3 0,1 0,10 8,6" fill="${rgb(c, 0.9)}"/></g></g>`;
 }
 function statsSvg(t, s) {
   const tiles = [
@@ -110,7 +110,7 @@ function statsSvg(t, s) {
 <text x="${x + 12}" y="90" class="mono" font-size="9.5" fill="${C.dim}">${esc(sub)}</text>
 ${cube(x + tw - 22, 66, col)}</g>`;
   }).join('');
-  return shell(W, H, inner, '', '.t{animation:t .7s cubic-bezier(.2,.8,.2,1) backwards}@keyframes t{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}');
+  return shell(W, H, inner, '', '.t{animation:t .7s cubic-bezier(.2,.8,.2,1) backwards}.fl{animation:fl 3s ease-in-out infinite}@keyframes fl{50%{transform:translateY(-3px)}}@keyframes t{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}');
 }
 
 // ---------------- isometric skyline ----------------
@@ -178,11 +178,12 @@ ${stars}
 <text x="48" y="116" class="mono" font-size="10" fill="${C.sub}">${fmt(s.year)} contributions · ${s.active} active days · taller tower = busier day</text>
 <text x="720" y="91" class="mono" font-size="9" fill="${C.dim}" text-anchor="end">less</text>${legend}<text x="808" y="91" class="mono" font-size="9" fill="${C.dim}">more</text>
 ${base}${bars}${months}${callout}
+<rect class="sweep2" x="-200" y="60" width="160" height="${H - 120}" fill="url(#sw)" opacity=".5"/>
 <text x="48" y="${H - 44}" class="mono" font-size="9" letter-spacing="1" fill="${C.dim}">USER <tspan fill="${C.sub}">${LOGIN}</tspan>    GRID <tspan fill="${C.sub}">53w × 7d</tspan></text>`;
   return shell(W, H, inner,
-    `<linearGradient id="edge" x1="0" x2="1"><stop offset="0" stop-color="#2A1F4D"/><stop offset=".5" stop-color="#3A1F4A"/><stop offset="1" stop-color="#4A1F33"/></linearGradient>`,
+    `<linearGradient id="sw" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#BF5AF2" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><linearGradient id="edge" x1="0" x2="1"><stop offset="0" stop-color="#2A1F4D"/><stop offset=".5" stop-color="#3A1F4A"/><stop offset="1" stop-color="#4A1F33"/></linearGradient>`,
     `@keyframes b{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-.c{animation:b .6s .2s backwards}.s{animation:tw 3s ease-in-out infinite}@keyframes tw{50%{opacity:.08}}`);
+.c{animation:b .6s .2s backwards}.sweep2{animation:sw2 7s ease-in-out infinite}@keyframes sw2{0%{transform:translateX(0)}60%,100%{transform:translateX(1100px)}}.s{animation:tw 3s ease-in-out infinite}@keyframes tw{50%{opacity:.08}}`);
 }
 
 // ---------------- dev news ----------------
@@ -232,6 +233,37 @@ function newsMarkdown(items) {
   return `<table>\n${rows}</table>`;
 }
 
+
+// ---------------- live activity grid (bottom panel) ----------------
+function pulseSvg(days, s) {
+  const W = 900, H = 230, cell = 11, gap = 3, step = cell + gap;
+  const weeks = []; for (let i = 0; i < days.length; i += 7) weeks.push(days.slice(i, i + 7));
+  const cols = weeks.slice(-53);
+  const max = Math.max(1, ...days.map(d => d.count));
+  const gw = cols.length * step - gap, gx = Math.round((W - gw) / 2), gy = 92, dur = 6;
+  let cells = '';
+  cols.forEach((wk, w) => wk.forEach((d, i) => {
+    const q = d.count / max;
+    const fill = d.count ? rgb(mix(Math.min(1, Math.pow(q, 0.6)))) : '#17171E';
+    const delay = (w / cols.length * dur).toFixed(2);
+    cells += `<rect x="${gx + w * step}" y="${gy + i * step}" width="${cell}" height="${cell}" rx="3" fill="${fill}" class="${d.count ? 'on' : 'off'}" style="animation-delay:${delay}s"><title>${d.date}: ${d.count}</title></rect>`;
+  }));
+  const inner = `${windowBar(24, 20, 852, H - 40, '~/activity --live --stream', `${fmt(s.year)} events · 53 weeks`)}
+<text x="48" y="78" class="mono" font-size="10" fill="${C.sub}"><tspan fill="#28C840">●</tspan> streaming commits from the last 12 months</text>
+${cells}
+<rect class="bar" x="${gx - 6}" y="${gy - 8}" width="4" height="${7 * step + 12}" rx="2" fill="url(#g)"/>
+<rect class="glow" x="${gx - 30}" y="${gy - 8}" width="28" height="${7 * step + 12}" fill="url(#trail)"/>
+<rect x="${gx}" y="${gy + 7 * step + 12}" width="${gw}" height="3" rx="1.5" fill="#17171E"/>
+<rect class="prog" x="${gx}" y="${gy + 7 * step + 12}" width="${gw}" height="3" rx="1.5" fill="url(#g)"/>`;
+  const dx = gw + 12;
+  return shell(W, H, inner,
+    `<linearGradient id="trail" x1="0" x2="1"><stop offset="0" stop-color="#BF5AF2" stop-opacity="0"/><stop offset="1" stop-color="#BF5AF2" stop-opacity=".35"/></linearGradient>`,
+    `.bar,.glow{animation:run ${dur}s linear infinite}@keyframes run{from{transform:translateX(0)}to{transform:translateX(${dx}px)}}
+.on{animation:ping ${dur}s linear infinite}@keyframes ping{0%{opacity:1;filter:brightness(2.2)}6%{opacity:1;filter:brightness(1)}100%{opacity:1}}
+.off{animation:dim ${dur}s linear infinite}@keyframes dim{0%{fill:#2A2A36}8%{fill:#17171E}}
+.prog{transform-origin:${gx}px 0;animation:pg ${dur}s linear infinite}@keyframes pg{from{transform:scaleX(0)}to{transform:scaleX(1)}}`);
+}
+
 // ---------------- footer ----------------
 function footerSvg() {
   return shell(900, 96, `<rect x="24" y="20" width="852" height="56" rx="14" fill="${C.card}" stroke="${C.line}"/>
@@ -247,6 +279,7 @@ const t = await contributions();
 const s = summarize(t.days);
 writeFileSync('assets/stats.svg', statsSvg(t, s));
 writeFileSync('assets/skyline.svg', skylineSvg(t.days, s));
+writeFileSync('assets/pulse.svg', pulseSvg(t.days, s));
 const items = await news();
 writeFileSync('assets/news.svg', newsHeaderSvg(items.length));
 writeFileSync('assets/footer.svg', footerSvg());
