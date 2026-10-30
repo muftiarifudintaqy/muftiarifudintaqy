@@ -1,1 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="110" viewBox="0 0 900 110"><rect width="900" height="110" rx="18" fill="#050507" stroke="#24242C"/><text x="450" y="59" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#8E8E99">building panel… run the "Update profile" workflow once</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="118" viewBox="0 0 900 118">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#5E5CE6"/><stop offset=".5" stop-color="#BF5AF2"/><stop offset="1" stop-color="#FF6482"/></linearGradient>
+<clipPath id="outer"><rect width="900" height="118" rx="18"/></clipPath>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI',Helvetica,Arial,sans-serif}.mono{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace}.t{animation:t .7s cubic-bezier(.2,.8,.2,1) backwards}@keyframes t{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style></defs>
+<g clip-path="url(#outer)"><rect width="900" height="118" fill="#050507"/><g class="t" style="animation-delay:0.00s">
+<rect x="24" y="22" width="160.8" height="76" rx="12" fill="#0D0D12" stroke="#24242C"/>
+<rect x="36" y="34" width="2.5" height="11" rx="1" fill="rgb(94,92,230)"/>
+<text x="44" y="43" class="mono" font-size="9" letter-spacing="1.6" fill="#8E8E99">TOTAL</text>
+<text x="36" y="74" font-size="26" font-weight="700" letter-spacing="-.8" fill="#F5F5F7">128</text>
+<text x="36" y="90" class="mono" font-size="9.5" fill="#55555F">since Jul 2024</text>
+<g transform="translate(162.8 66)"><polygon points="0,-7 8,-3 0,1 -8,-3" fill="rgb(108,106,255)"/><polygon points="-8,-3 0,1 0,10 -8,6" fill="rgb(66,64,161)"/><polygon points="8,-3 0,1 0,10 8,6" fill="rgb(85,83,207)"/></g></g><g class="t" style="animation-delay:0.08s">
+<rect x="196.8" y="22" width="160.8" height="76" rx="12" fill="#0D0D12" stroke="#24242C"/>
+<rect x="208.8" y="34" width="2.5" height="11" rx="1" fill="rgb(143,91,236)"/>
+<text x="216.8" y="43" class="mono" font-size="9" letter-spacing="1.6" fill="#8E8E99">LAST 12 MONTHS</text>
+<text x="208.8" y="74" font-size="26" font-weight="700" letter-spacing="-.8" fill="#F5F5F7">49</text>
+<text x="208.8" y="90" class="mono" font-size="9.5" fill="#55555F">16 active days</text>
+<g transform="translate(335.6 66)"><polygon points="0,-7 8,-3 0,1 -8,-3" fill="rgb(164,105,255)"/><polygon points="-8,-3 0,1 0,10 -8,6" fill="rgb(100,64,165)"/><polygon points="8,-3 0,1 0,10 8,6" fill="rgb(129,82,212)"/></g></g><g class="t" style="animation-delay:0.16s">
+<rect x="369.6" y="22" width="160.8" height="76" rx="12" fill="#0D0D12" stroke="#24242C"/>
+<rect x="381.6" y="34" width="2.5" height="11" rx="1" fill="rgb(191,90,242)"/>
+<text x="389.6" y="43" class="mono" font-size="9" letter-spacing="1.6" fill="#8E8E99">CURRENT STREAK</text>
+<text x="381.6" y="74" font-size="26" font-weight="700" letter-spacing="-.8" fill="#F5F5F7">1</text>
+<text x="381.6" y="90" class="mono" font-size="9.5" fill="#55555F">day in a row</text>
+<g transform="translate(508.4000000000001 66)"><polygon points="0,-7 8,-3 0,1 -8,-3" fill="rgb(220,103,255)"/><polygon points="-8,-3 0,1 0,10 -8,6" fill="rgb(134,63,169)"/><polygon points="8,-3 0,1 0,10 8,6" fill="rgb(172,81,218)"/></g></g><g class="t" style="animation-delay:0.24s">
+<rect x="542.4000000000001" y="22" width="160.8" height="76" rx="12" fill="#0D0D12" stroke="#24242C"/>
+<rect x="554.4000000000001" y="34" width="2.5" height="11" rx="1" fill="rgb(223,95,186)"/>
+<text x="562.4000000000001" y="43" class="mono" font-size="9" letter-spacing="1.6" fill="#8E8E99">LONGEST STREAK</text>
+<text x="554.4000000000001" y="74" font-size="26" font-weight="700" letter-spacing="-.8" fill="#F5F5F7">2</text>
+<text x="554.4000000000001" y="90" class="mono" font-size="9.5" fill="#55555F">Apr 12 – Apr 13</text>
+<g transform="translate(681.2 66)"><polygon points="0,-7 8,-3 0,1 -8,-3" fill="rgb(255,109,214)"/><polygon points="-8,-3 0,1 0,10 -8,6" fill="rgb(156,67,130)"/><polygon points="8,-3 0,1 0,10 8,6" fill="rgb(201,86,167)"/></g></g><g class="t" style="animation-delay:0.32s">
+<rect x="715.2" y="22" width="160.8" height="76" rx="12" fill="#0D0D12" stroke="#24242C"/>
+<rect x="727.2" y="34" width="2.5" height="11" rx="1" fill="rgb(255,100,130)"/>
+<text x="735.2" y="43" class="mono" font-size="9" letter-spacing="1.6" fill="#8E8E99">BEST DAY</text>
+<text x="727.2" y="74" font-size="26" font-weight="700" letter-spacing="-.8" fill="#F5F5F7">9</text>
+<text x="727.2" y="90" class="mono" font-size="9.5" fill="#55555F">Oct 28</text>
+<g transform="translate(854 66)"><polygon points="0,-7 8,-3 0,1 -8,-3" fill="rgb(255,115,150)"/><polygon points="-8,-3 0,1 0,10 -8,6" fill="rgb(179,70,91)"/><polygon points="8,-3 0,1 0,10 8,6" fill="rgb(230,90,117)"/></g></g></g>
+<rect x=".5" y=".5" width="899" height="117" rx="17.5" fill="none" stroke="#24242C"/></svg>
