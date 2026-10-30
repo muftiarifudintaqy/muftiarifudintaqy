@@ -26,7 +26,7 @@ function mix(t) { // 0..1 along the brand gradient
 const rgb = (c, f = 1) => `rgb(${c.map(v => Math.max(0, Math.min(255, Math.round(v * f)))).join(',')})`;
 
 function shell(w, h, inner, defs = '', style = '') {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
 <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#5E5CE6"/><stop offset=".5" stop-color="#BF5AF2"/><stop offset="1" stop-color="#FF6482"/></linearGradient>
 <clipPath id="outer"><rect width="${w}" height="${h}" rx="18"/></clipPath>${defs}
 <style>text{font-family:${SANS}}.mono{font-family:${MONO}}${style}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style></defs>
@@ -57,7 +57,7 @@ async function contributions() {
     const days = [];
     for (let i = 370; i >= 0; i--) {
       const d = new Date(now); d.setUTCDate(d.getUTCDate() - i);
-      const r = Math.random(); const busy = i < 80 ? 70 : 16;
+      const r = Math.random(); const busy = i < 80 ? 70 : 16; if (process.env.MOCK === 'sparse') { days.push({ date: d.toISOString().slice(0, 10), count: (i < 40 ? r < 0.7 : r < 0.05) ? 1 + Math.floor(r * 20) : 0 }); continue; }
       days.push({ date: d.toISOString().slice(0, 10), count: r < 0.5 ? 0 : Math.floor(r * r * busy) });
     }
     return { days: days.slice(-371), allTime: 3120, since: '2024-07-01' };
@@ -235,69 +235,156 @@ function newsMarkdown(items) {
 }
 
 
-// ---------------- live activity grid with a snake that eats commits ----------------
+// ---------------- snake game: grows one block per commit-day, crashes, restarts ----------------
+function simulateSnake(cols) {
+  const C = cols.length, R = 7, key = (x, y) => x + ',' + y;
+  const food = new Map();
+  cols.forEach((wk, x) => wk.forEach((d, y) => { if (d.count > 0) food.set(key(x, y), d.date); }));
+  // spawn from a random edge (seeded by date so it changes every day, not every run)
+  let seed = Number(new Date().toISOString().slice(0, 10).replace(/-/g, ''));
+  const rnd = () => (seed = (seed * 1103515245 + 12345) % 2147483648) / 2147483648;
+  const side = Math.floor(rnd() * 4);
+  let head, dir;
+  if (side === 0) { head = [0, Math.floor(rnd() * R)]; dir = [1, 0]; }
+  else if (side === 1) { head = [C - 1, Math.floor(rnd() * R)]; dir = [-1, 0]; }
+  else if (side === 2) { head = [Math.floor(rnd() * C), 0]; dir = [0, 1]; }
+  else { head = [Math.floor(rnd() * C), R - 1]; dir = [0, -1]; }
+  const INIT = 3;
+  // entry: start outside the board so the snake slides in from the wall
+  const entry = [];
+  for (let k = INIT + 1; k >= 1; k--) entry.push([head[0] - dir[0] * k, head[1] - dir[1] * k]);
+  const path = [...entry, head.slice()];
+  let body = [head.slice(), ...entry.slice().reverse().slice(0, INIT - 1)];
+  const eats = []; // {tick, cell, len}
+  let len = INIT;
+  const inside = (x, y) => x >= 0 && y >= 0 && x < C && y < R;
+  const dirs = [[1, 0], [-1, 0], [0, 1], [0, -1]];
+  const blocked = (b) => new Set(b.slice(0, -1).map(p => key(p[0], p[1])));
+  function bfs(start, b) {
+    const block = blocked(b), prev = new Map([[key(...start), null]]), q = [start];
+    while (q.length) {
+      const c = q.shift();
+      if (food.has(key(...c)) && !(c[0] === start[0] && c[1] === start[1])) {
+        const route = []; let k = key(...c);
+        while (prev.get(k)) { route.push(k.split(',').map(Number)); k = prev.get(k); }
+        return route.reverse();
+      }
+      for (const d of dirs) {
+        const n = [c[0] + d[0], c[1] + d[1]], nk = key(...n);
+        if (!inside(...n) || block.has(nk) || prev.has(nk)) continue;
+        prev.set(nk, key(...c)); q.push(n);
+      }
+    }
+    return null;
+  }
+  function space(start, b) { // reachable area, used when no food is reachable
+    const block = blocked(b), seen = new Set([key(...start)]), q = [start];
+    while (q.length) { const c = q.shift(); for (const d of dirs) { const n = [c[0] + d[0], c[1] + d[1]], nk = key(...n); if (inside(...n) && !block.has(nk) && !seen.has(nk)) { seen.add(nk); q.push(n); } } }
+    return seen.size;
+  }
+  let guard = 0;
+  while (food.size && guard++ < 4000) {
+    const route = bfs(head, body);
+    let step;
+    if (route && route.length) step = route[0];
+    else {
+      const opts = dirs.map(d => [head[0] + d[0], head[1] + d[1]]).filter(n => inside(...n) && !blocked(body).has(key(...n)));
+      if (!opts.length) break;
+      opts.sort((p, q) => space(q, [q, ...body]) - space(p, [p, ...body]));
+      step = opts[0];
+    }
+    dir = [step[0] - head[0], step[1] - head[1]];
+    head = step; path.push(head.slice());
+    body.unshift(head.slice());
+    const k = key(...head);
+    if (food.has(k)) { len++; eats.push({ tick: path.length - 1, date: food.get(k), len }); food.delete(k); }
+    while (body.length > len) body.pop();
+  }
+  // game over: keep going straight until the snake hits the wall
+  while (inside(head[0] + dir[0], head[1] + dir[1])) { head = [head[0] + dir[0], head[1] + dir[1]]; path.push(head.slice()); }
+  path.push([head[0] + dir[0] * 0.45, head[1] + dir[1] * 0.45]); // bump into the wall
+  return { path, eats, init: INIT, finalLen: len, crashTick: path.length - 1 };
+}
+
 function pulseSvg(days, s) {
-  const W = 900, H = 240, cell = 11, gap = 3, step = cell + gap;
+  const W = 900, H = 262, cell = 11, gap = 3, step = cell + gap;
   const weeks = []; for (let i = 0; i < days.length; i += 7) weeks.push(days.slice(i, i + 7));
   const cols = weeks.slice(-53);
   const max = Math.max(1, ...days.map(d => d.count));
-  const gw = cols.length * step - gap, gx = Math.round((W - gw) / 2), gy = 96;
-  const cx = (w, d) => gx + w * step + cell / 2, cy = (w, d) => gy + d * step + cell / 2;
+  const gw = cols.length * step - gap, gh = 7 * step - gap, gx = Math.round((W - gw) / 2), gy = 100;
+  const P = (x, y) => [gx + x * step + cell / 2, gy + y * step + cell / 2];
 
-  // route: walk the grid column by column (zigzag) and only stop at days with commits
-  const targets = [];
-  cols.forEach((wk, w) => {
-    const rows = wk.map((d, i) => ({ d, i })).filter(x => x.d.count > 0);
-    if (w % 2) rows.reverse();
-    rows.forEach(x => targets.push({ w, i: x.i, date: x.d.date }));
-  });
-  const pts = [[gx - 14, gy + cell / 2]];
-  for (const t of targets) {
-    const [px, py] = pts[pts.length - 1], nx = cx(t.w, t.i), ny = cy(t.w, t.i);
-    if (px !== nx && py !== ny) pts.push([nx, py]); // grid-aligned turns
-    pts.push([nx, ny]);
-  }
-  pts.push([gx + gw + 14, pts[pts.length - 1][1]]);
-  let len = 0; const cum = [0];
-  for (let i = 1; i < pts.length; i++) { len += Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]); cum.push(len); }
-  const speed = 160; // px per second
-  const travel = Math.max(6, len / speed), DUR = +(travel + 2).toFixed(2);
-  const path = 'M' + pts.map(p => p.map(v => v.toFixed(1)).join(' ')).join(' L');
+  const g = simulateSnake(cols);
+  const TICK = 0.11, N = g.path.length - 1, RUN = N * TICK, HOLD = 1.6, D = +(RUN + HOLD).toFixed(3);
+  const pct = t => (t / D * 100).toFixed(3);
+  const pathD = 'M' + g.path.map(p => P(...p).map(v => v.toFixed(1)).join(' ')).join(' L');
 
-  // when does the head reach each target cell?
-  const eatAt = {}; let k = 1;
-  for (const t of targets) {
-    const [nx, ny] = [cx(t.w, t.i), cy(t.w, t.i)];
-    while (k < pts.length && !(Math.abs(pts[k][0] - nx) < .01 && Math.abs(pts[k][1] - ny) < .01)) k++;
-    eatAt[t.date] = cum[k] / len * travel;
-  }
+  // board + food
   let cells = '';
-  cols.forEach((wk, w) => wk.forEach((d, i) => {
-    const x = gx + w * step, y = gy + i * step;
-    cells += `<rect x="${x}" y="${y}" width="${cell}" height="${cell}" rx="3" fill="#17171E"/>`;
+  const eatTick = Object.fromEntries(g.eats.map(e => [e.date, e.tick]));
+  cols.forEach((wk, x) => wk.forEach((d, y) => {
+    const [px, py] = [gx + x * step, gy + y * step];
+    cells += `<rect x="${px}" y="${py}" width="${cell}" height="${cell}" rx="3" fill="#15151C"/>`;
     if (d.count) {
       const q = d.count / max, col = rgb(mix(Math.min(1, Math.pow(q, 0.6))));
-      const t = eatAt[d.date] ?? 0, p0 = (t / DUR * 100).toFixed(2), p1 = Math.min(99.9, t / DUR * 100 + 1.2).toFixed(2);
-      cells += `<rect x="${x}" y="${y}" width="${cell}" height="${cell}" rx="3" fill="${col}" style="animation:e${w}_${i} ${DUR}s linear infinite"><title>${d.date}: ${d.count}</title></rect>
-<style>@keyframes e${w}_${i}{0%,${p0}%{opacity:1;transform:none}${p1}%{opacity:0;transform:scale(.4)}97%{opacity:0}100%{opacity:1}}</style>`;
+      const t = (eatTick[d.date] ?? N) * TICK;
+      cells += `<rect x="${px}" y="${py}" width="${cell}" height="${cell}" rx="3" fill="${col}" class="f" style="animation-name:f${x}_${y}"><title>${d.date}: ${d.count}</title></rect>`
+        + `<style>@keyframes f${x}_${y}{0%,${pct(Math.max(0, t - 0.01))}%{opacity:1;transform:none}${pct(t + 0.12)}%,98%{opacity:0;transform:scale(.2)}100%{opacity:1;transform:none}}</style>`;
     }
   }));
-  // snake body: segments following the head with small delays
-  const segs = 12; let body = '';
-  for (let j = segs - 1; j >= 0; j--) {
-    const r = j === 0 ? 6.4 : 5.6 - j * 0.26, fill = j === 0 ? '#FFFFFF' : rgb(mix(1 - j / segs));
-    body += `<circle r="${r.toFixed(2)}" fill="${fill}" opacity="${(1 - j * 0.07).toFixed(2)}"><animateMotion dur="${DUR}s" repeatCount="indefinite" begin="${(j * 0.055).toFixed(3)}s" keyPoints="0;1;1" keyTimes="0;${(travel / DUR).toFixed(3)};1" calcMode="linear" path="${path}"/></circle>`;
+
+  // body segments: segment i trails the head by i ticks, appears when the snake has grown to i+1
+  const maxLen = g.finalLen;
+  const appear = i => (i < g.init ? 0 : g.eats[i - g.init].tick * TICK);
+  let segs = '', segStyle = '';
+  for (let i = maxLen - 1; i >= 1; i--) {
+    const t0 = appear(i);
+    const tailT = Math.max(0, 1 - i / Math.max(8, maxLen));
+    const r = 6.1 * (0.74 + 0.26 * tailT);
+    const c = mix(Math.min(1, i / Math.max(10, maxLen)));
+    const f = Math.max(0, (N - i) / N).toFixed(5);
+    segs += `<g class="s s${i}"><g><animateMotion dur="${D}s" repeatCount="indefinite" rotate="auto" calcMode="linear" keyPoints="0;0;${f};${f}" keyTimes="0;${(i * TICK / D).toFixed(5)};${(RUN / D).toFixed(5)};1"><mpath href="#route" xlink:href="#route"/></animateMotion>
+<ellipse rx="${(r * 1.3).toFixed(2)}" ry="${r.toFixed(2)}" fill="${rgb(c)}" stroke="${rgb(c, 0.55)}" stroke-width=".8"/><path d="M${(-r * .55).toFixed(1)} ${(-r * .55).toFixed(1)}q${(r * .45).toFixed(1)} ${(r * .45).toFixed(1)} 0 ${(r * 1.1).toFixed(1)}M${(r * .15).toFixed(1)} ${(-r * .6).toFixed(1)}q${(r * .45).toFixed(1)} ${(r * .5).toFixed(1)} 0 ${(r * 1.2).toFixed(1)}" stroke="${rgb(c, 0.62)}" stroke-width="1" fill="none"/><ellipse cx="0" cy="${(-r * .38).toFixed(1)}" rx="${(r * .6).toFixed(1)}" ry="${(r * .22).toFixed(1)}" fill="#fff" opacity=".22"/></g></g>`;
+    segStyle += `.s${i}{animation:v${i} ${D}s linear infinite}@keyframes v${i}{0%,${pct(Math.max(0, t0 - 0.001))}%{opacity:0}${pct(t0)}%,${pct(RUN + 0.5)}%{opacity:1}${pct(RUN + 1.2)}%,100%{opacity:0}}`;
   }
-  const head = `<circle r="14" fill="url(#hg)"><animateMotion dur="${DUR}s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;${(travel / DUR).toFixed(3)};1" calcMode="linear" path="${path}"/></circle>`;
-  const inner = `${windowBar(24, 20, 852, H - 40, '~/activity --live --snake', `${fmt(s.year)} commits · ${targets.length} active days`)}
-<text x="48" y="80" class="mono" font-size="10" fill="${C.sub}"><tspan fill="#28C840">●</tspan> a snake eating every day I shipped code in the last 12 months</text>
-${cells}${head}${body}
-<rect x="${gx}" y="${gy + 7 * step + 14}" width="${gw}" height="3" rx="1.5" fill="#17171E"/>
-<rect class="prog" x="${gx}" y="${gy + 7 * step + 14}" width="${gw}" height="3" rx="1.5" fill="url(#g)"/>`;
+  // head: faces +x, rotates with the path
+  const head = `<g class="hd"><g><animateMotion dur="${D}s" repeatCount="indefinite" rotate="auto" calcMode="linear" keyPoints="0;1;1" keyTimes="0;${(RUN / D).toFixed(5)};1"><mpath href="#route" xlink:href="#route"/></animateMotion>
+<g transform="scale(1.25)"><path class="tg" d="M8 0h6l2 -2M14 0l2 2" stroke="#FF453A" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+<path d="M-6 -6.2C2 -7.4 9 -4.6 9.5 0C9 4.6 2 7.4 -6 6.2C-8 3 -8 -3 -6 -6.2Z" fill="url(#headg)"/>
+<path d="M-3 -5.4c3 1 3 9.8 0 10.8" stroke="#00000033" stroke-width="1" fill="none"/>
+<ellipse cx="2.6" cy="-3.4" rx="2.4" ry="1.9" fill="#fff"/><ellipse cx="2.6" cy="3.4" rx="2.4" ry="1.9" fill="#fff"/>
+<ellipse cx="3.3" cy="-3.4" rx="1.1" ry="1.5" fill="#0A0A0F"/><ellipse cx="3.3" cy="3.4" rx="1.1" ry="1.5" fill="#0A0A0F"/>
+<circle cx="8.2" cy="-1.3" r=".55" fill="#3a0d1c"/><circle cx="8.2" cy="1.3" r=".55" fill="#3a0d1c"/></g></g></g>`;
+
+  // score counter: one label per length, shown while that length is current
+  let score = '', scoreStyle = '';
+  const marks = [{ tick: 0, len: g.init }, ...g.eats.map(e => ({ tick: e.tick, len: e.len }))];
+  marks.forEach((m, i) => {
+    const t0 = m.tick * TICK, t1 = i + 1 < marks.length ? marks[i + 1].tick * TICK : RUN + HOLD;
+    score += `<text x="${W - 48}" y="84" class="mono sc c${i}" font-size="10" fill="${C.sub}" text-anchor="end">LENGTH <tspan fill="${C.ink}" font-weight="700">${m.len}</tspan>   EATEN <tspan fill="${C.ink}" font-weight="700">${m.len - g.init}</tspan></text>`;
+    scoreStyle += `.c${i}{opacity:0;animation:k${i} ${D}s steps(1,end) infinite}@keyframes k${i}{0%{opacity:0}${pct(t0)}%{opacity:1}${pct(Math.min(t1, D - 0.001))}%,100%{opacity:0}}`;
+  });
+
+  const over = `<g class="go"><rect x="${gx}" y="${gy}" width="${gw}" height="${gh}" rx="6" fill="#FF453A" opacity=".10"/>
+<text x="${W / 2}" y="${gy + gh / 2 + 5}" text-anchor="middle" class="mono" font-size="15" font-weight="800" letter-spacing="4" fill="#FF6482">GAME OVER · ${g.finalLen - g.init} COMMIT-DAYS EATEN · RESTARTING</text></g>`;
+
+  const inner = `${windowBar(24, 20, 852, H - 40, '~/activity --play snake', `${fmt(s.year)} commits · ${g.eats.length} active days`)}
+<text x="48" y="84" class="mono" font-size="10" fill="${C.sub}"><tspan fill="#28C840">●</tspan> every commit-day is food · the snake grows one block per bite · crash = restart</text>
+${score}
+<rect x="${gx - 6}" y="${gy - 6}" width="${gw + 12}" height="${gh + 12}" rx="8" fill="none" stroke="${C.line}"/>
+${cells}
+<g clip-path="url(#board)">${segs}${head}</g>
+${over}
+<text x="48" y="${H - 34}" class="mono" font-size="9" fill="${C.dim}">play it yourself → muftzyxslwly.my.id/snake.html</text>`;
   return shell(W, H, inner,
-    `<radialGradient id="hg"><stop offset="0" stop-color="#FF6482" stop-opacity=".55"/><stop offset="1" stop-color="#FF6482" stop-opacity="0"/></radialGradient>`,
-    `rect[style]{transform-box:fill-box;transform-origin:center}
-.prog{transform-origin:${gx}px 0;animation:pg ${DUR}s linear infinite}@keyframes pg{from{transform:scaleX(0)}${(travel / DUR * 100).toFixed(1)}%{transform:scaleX(1)}to{transform:scaleX(1)}}`);
+    `<path id="route" d="${pathD}"/>
+<clipPath id="board"><rect x="${gx - 6}" y="${gy - 6}" width="${gw + 12}" height="${gh + 12}" rx="8"/></clipPath>
+<radialGradient id="headg" cx=".65" cy=".5" r=".7"><stop offset="0" stop-color="#FF8FB0"/><stop offset=".6" stop-color="#FF6482"/><stop offset="1" stop-color="#C2306A"/></radialGradient>`,
+    `.f{transform-box:fill-box;transform-origin:center;animation-duration:${D}s;animation-timing-function:linear;animation-iteration-count:infinite}
+${segStyle}${scoreStyle}
+.hd{animation:hv ${D}s linear infinite}@keyframes hv{0%,${pct(RUN + 0.5)}%{opacity:1}${pct(RUN + 1.2)}%,100%{opacity:0}}
+.tg{animation:tg .9s steps(2,end) infinite}@keyframes tg{50%{opacity:0}}
+.go{opacity:0;animation:go ${D}s linear infinite}@keyframes go{0%,${pct(RUN)}%{opacity:0}${pct(RUN + 0.15)}%,${pct(RUN + 1.3)}%{opacity:1}${pct(RUN + 1.5)}%,100%{opacity:0}}`);
 }
 
 // ---------------- footer ----------------
@@ -316,6 +403,7 @@ const s = summarize(t.days);
 writeFileSync('assets/stats.svg', statsSvg(t, s));
 writeFileSync('assets/skyline.svg', skylineSvg(t.days, s));
 writeFileSync('assets/pulse.svg', pulseSvg(t.days, s));
+writeFileSync('assets/contrib.json', JSON.stringify({ user: LOGIN, updated: now.toISOString(), year: s.year, days: t.days.filter(d => d.count > 0) }));
 const items = await news();
 writeFileSync('assets/news.svg', newsHeaderSvg(items.length));
 writeFileSync('assets/footer.svg', footerSvg());
