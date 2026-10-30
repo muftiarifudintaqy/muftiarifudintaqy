@@ -235,34 +235,69 @@ function newsMarkdown(items) {
 }
 
 
-// ---------------- live activity grid (bottom panel) ----------------
+// ---------------- live activity grid with a snake that eats commits ----------------
 function pulseSvg(days, s) {
-  const W = 900, H = 230, cell = 11, gap = 3, step = cell + gap;
+  const W = 900, H = 240, cell = 11, gap = 3, step = cell + gap;
   const weeks = []; for (let i = 0; i < days.length; i += 7) weeks.push(days.slice(i, i + 7));
   const cols = weeks.slice(-53);
   const max = Math.max(1, ...days.map(d => d.count));
-  const gw = cols.length * step - gap, gx = Math.round((W - gw) / 2), gy = 92, dur = 6;
+  const gw = cols.length * step - gap, gx = Math.round((W - gw) / 2), gy = 96;
+  const cx = (w, d) => gx + w * step + cell / 2, cy = (w, d) => gy + d * step + cell / 2;
+
+  // route: walk the grid column by column (zigzag) and only stop at days with commits
+  const targets = [];
+  cols.forEach((wk, w) => {
+    const rows = wk.map((d, i) => ({ d, i })).filter(x => x.d.count > 0);
+    if (w % 2) rows.reverse();
+    rows.forEach(x => targets.push({ w, i: x.i, date: x.d.date }));
+  });
+  const pts = [[gx - 14, gy + cell / 2]];
+  for (const t of targets) {
+    const [px, py] = pts[pts.length - 1], nx = cx(t.w, t.i), ny = cy(t.w, t.i);
+    if (px !== nx && py !== ny) pts.push([nx, py]); // grid-aligned turns
+    pts.push([nx, ny]);
+  }
+  pts.push([gx + gw + 14, pts[pts.length - 1][1]]);
+  let len = 0; const cum = [0];
+  for (let i = 1; i < pts.length; i++) { len += Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]); cum.push(len); }
+  const speed = 160; // px per second
+  const travel = Math.max(6, len / speed), DUR = +(travel + 2).toFixed(2);
+  const path = 'M' + pts.map(p => p.map(v => v.toFixed(1)).join(' ')).join(' L');
+
+  // when does the head reach each target cell?
+  const eatAt = {}; let k = 1;
+  for (const t of targets) {
+    const [nx, ny] = [cx(t.w, t.i), cy(t.w, t.i)];
+    while (k < pts.length && !(Math.abs(pts[k][0] - nx) < .01 && Math.abs(pts[k][1] - ny) < .01)) k++;
+    eatAt[t.date] = cum[k] / len * travel;
+  }
   let cells = '';
   cols.forEach((wk, w) => wk.forEach((d, i) => {
-    const q = d.count / max;
-    const fill = d.count ? rgb(mix(Math.min(1, Math.pow(q, 0.6)))) : '#17171E';
-    const delay = (w / cols.length * dur).toFixed(2);
-    cells += `<rect x="${gx + w * step}" y="${gy + i * step}" width="${cell}" height="${cell}" rx="3" fill="${fill}" class="${d.count ? 'on' : 'off'}" style="animation-delay:${delay}s"><title>${d.date}: ${d.count}</title></rect>`;
+    const x = gx + w * step, y = gy + i * step;
+    cells += `<rect x="${x}" y="${y}" width="${cell}" height="${cell}" rx="3" fill="#17171E"/>`;
+    if (d.count) {
+      const q = d.count / max, col = rgb(mix(Math.min(1, Math.pow(q, 0.6))));
+      const t = eatAt[d.date] ?? 0, p0 = (t / DUR * 100).toFixed(2), p1 = Math.min(99.9, t / DUR * 100 + 1.2).toFixed(2);
+      cells += `<rect x="${x}" y="${y}" width="${cell}" height="${cell}" rx="3" fill="${col}" style="animation:e${w}_${i} ${DUR}s linear infinite"><title>${d.date}: ${d.count}</title></rect>
+<style>@keyframes e${w}_${i}{0%,${p0}%{opacity:1;transform:none}${p1}%{opacity:0;transform:scale(.4)}97%{opacity:0}100%{opacity:1}}</style>`;
+    }
   }));
-  const inner = `${windowBar(24, 20, 852, H - 40, '~/activity --live --stream', `${fmt(s.year)} events · 53 weeks`)}
-<text x="48" y="78" class="mono" font-size="10" fill="${C.sub}"><tspan fill="#28C840">●</tspan> streaming commits from the last 12 months</text>
-${cells}
-<rect class="bar" x="${gx - 6}" y="${gy - 8}" width="4" height="${7 * step + 12}" rx="2" fill="url(#g)"/>
-<rect class="glow" x="${gx - 30}" y="${gy - 8}" width="28" height="${7 * step + 12}" fill="url(#trail)"/>
-<rect x="${gx}" y="${gy + 7 * step + 12}" width="${gw}" height="3" rx="1.5" fill="#17171E"/>
-<rect class="prog" x="${gx}" y="${gy + 7 * step + 12}" width="${gw}" height="3" rx="1.5" fill="url(#g)"/>`;
-  const dx = gw + 12;
+  // snake body: segments following the head with small delays
+  const segs = 12; let body = '';
+  for (let j = segs - 1; j >= 0; j--) {
+    const r = j === 0 ? 6.4 : 5.6 - j * 0.26, fill = j === 0 ? '#FFFFFF' : rgb(mix(1 - j / segs));
+    body += `<circle r="${r.toFixed(2)}" fill="${fill}" opacity="${(1 - j * 0.07).toFixed(2)}"><animateMotion dur="${DUR}s" repeatCount="indefinite" begin="${(j * 0.055).toFixed(3)}s" keyPoints="0;1;1" keyTimes="0;${(travel / DUR).toFixed(3)};1" calcMode="linear" path="${path}"/></circle>`;
+  }
+  const head = `<circle r="14" fill="url(#hg)"><animateMotion dur="${DUR}s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;${(travel / DUR).toFixed(3)};1" calcMode="linear" path="${path}"/></circle>`;
+  const inner = `${windowBar(24, 20, 852, H - 40, '~/activity --live --snake', `${fmt(s.year)} commits · ${targets.length} active days`)}
+<text x="48" y="80" class="mono" font-size="10" fill="${C.sub}"><tspan fill="#28C840">●</tspan> a snake eating every day I shipped code in the last 12 months</text>
+${cells}${head}${body}
+<rect x="${gx}" y="${gy + 7 * step + 14}" width="${gw}" height="3" rx="1.5" fill="#17171E"/>
+<rect class="prog" x="${gx}" y="${gy + 7 * step + 14}" width="${gw}" height="3" rx="1.5" fill="url(#g)"/>`;
   return shell(W, H, inner,
-    `<linearGradient id="trail" x1="0" x2="1"><stop offset="0" stop-color="#BF5AF2" stop-opacity="0"/><stop offset="1" stop-color="#BF5AF2" stop-opacity=".35"/></linearGradient>`,
-    `.bar,.glow{animation:run ${dur}s linear infinite}@keyframes run{from{transform:translateX(0)}to{transform:translateX(${dx}px)}}
-.on{animation:ping ${dur}s linear infinite}@keyframes ping{0%{opacity:1;filter:brightness(2.2)}6%{opacity:1;filter:brightness(1)}100%{opacity:1}}
-.off{animation:dim ${dur}s linear infinite}@keyframes dim{0%{fill:#2A2A36}8%{fill:#17171E}}
-.prog{transform-origin:${gx}px 0;animation:pg ${dur}s linear infinite}@keyframes pg{from{transform:scaleX(0)}to{transform:scaleX(1)}}`);
+    `<radialGradient id="hg"><stop offset="0" stop-color="#FF6482" stop-opacity=".55"/><stop offset="1" stop-color="#FF6482" stop-opacity="0"/></radialGradient>`,
+    `rect[style]{transform-box:fill-box;transform-origin:center}
+.prog{transform-origin:${gx}px 0;animation:pg ${DUR}s linear infinite}@keyframes pg{from{transform:scaleX(0)}${(travel / DUR * 100).toFixed(1)}%{transform:scaleX(1)}to{transform:scaleX(1)}}`);
 }
 
 // ---------------- footer ----------------
