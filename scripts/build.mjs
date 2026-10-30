@@ -53,6 +53,11 @@ async function gql(query, variables) {
   return j.data;
 }
 async function contributions() {
+  if (process.env.MOCK_FILE) {
+    const j = JSON.parse(readFileSync(process.env.MOCK_FILE, 'utf8')); const map = Object.fromEntries(j.days.map(d => [d.date, d.count]));
+    const days = []; for (let i = 370; i >= 0; i--) { const d = new Date(now); d.setUTCDate(d.getUTCDate() - i); const k = d.toISOString().slice(0, 10); days.push({ date: k, count: map[k] || 0 }); }
+    return { days, allTime: 389, since: '2024-07-01' };
+  }
   if (MOCK) {
     const days = [];
     for (let i = 370; i >= 0; i--) {
@@ -236,12 +241,12 @@ function newsMarkdown(items) {
 
 
 // ---------------- snake game: grows one block per commit-day, crashes, restarts ----------------
-function simulateSnake(cols) {
+function simulateSnake(cols, seedOffset = 0) {
   const C = cols.length, R = 7, key = (x, y) => x + ',' + y;
   const food = new Map();
   cols.forEach((wk, x) => wk.forEach((d, y) => { if (d.count > 0) food.set(key(x, y), d.date); }));
   // spawn from a random edge (seeded by date so it changes every day, not every run)
-  let seed = Number(new Date().toISOString().slice(0, 10).replace(/-/g, ''));
+  let seed = Number(new Date().toISOString().slice(0, 10).replace(/-/g, '')) + seedOffset * 7919;
   const rnd = () => (seed = (seed * 1103515245 + 12345) % 2147483648) / 2147483648;
   const side = Math.floor(rnd() * 4);
   let head, dir;
@@ -341,7 +346,9 @@ function pulseSvg(days, s) {
   const gw = cols.length * step - gap, gh = 7 * step - gap, gx = Math.round((W - gw) / 2), gy = 100;
   const P = (x, y) => [gx + x * step + cell / 2, gy + y * step + cell / 2];
 
-  const g = simulateSnake(cols);
+  // try different spawn walls until the snake finishes a perfect run
+  let g = simulateSnake(cols, 0);
+  for (let k = 1; k < 80 && !g.victory; k++) { const t = simulateSnake(cols, k); if (t.victory || t.eats.length > g.eats.length) g = t; }
   const TICK = 0.11, N = g.path.length - 1, RUN = N * TICK, HOLD = g.victory ? 4.2 : 1.6, D = +(RUN + HOLD).toFixed(3);
   const END = D - 0.35; // fade out just before the loop restarts
   const pct = t => (t / D * 100).toFixed(3);
@@ -463,6 +470,7 @@ const s = summarize(t.days);
 writeFileSync('assets/stats.svg', statsSvg(t, s));
 writeFileSync('assets/skyline.svg', skylineSvg(t.days, s));
 writeFileSync('assets/pulse.svg', pulseSvg(t.days, s));
+writeFileSync('assets/contrib.json', JSON.stringify({ user: LOGIN, updated: now.toISOString(), year: s.year, days: t.days.filter(d => d.count > 0) }));
 writeFileSync('assets/contrib.json', JSON.stringify({ user: LOGIN, updated: now.toISOString(), year: s.year, days: t.days.filter(d => d.count > 0) }));
 const items = await news();
 writeFileSync('assets/news.svg', newsHeaderSvg(items.length));
