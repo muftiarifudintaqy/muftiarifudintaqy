@@ -3,7 +3,7 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 
 const LOGIN = process.env.GH_LOGIN || 'muftiarifudintaqy';
-const TOKEN = process.env.GITHUB_TOKEN;
+const TOKEN = process.env.GH_PAT || process.env.GITHUB_TOKEN;
 const MOCK = !!process.env.MOCK;
 const TZ = 'Asia/Jakarta';
 
@@ -196,7 +196,7 @@ const FEEDS = [
   ['FREECODECAMP', 'https://www.freecodecamp.org/news/rss/'],
 ];
 const pick = (xml, tag) => { const m = xml.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`, 'i')); return m ? m[1] : ''; };
-const clean = s => s.replace(/<!\[CDATA\[|\]\]>/g, '').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&#8217;|&rsquo;/g, "'").replace(/&#8220;|&#8221;|&quot;/g, '"').replace(/&amp;/g, '&').replace(/&#\d+;/g, '').replace(/\s+/g, ' ').trim();
+const clean = s => s.replace(/<!\[CDATA\[|\]\]>/g, '').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;lt;/g, '<').replace(/&amp;gt;/g, '>').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&#8217;|&rsquo;/g, "'").replace(/&#8220;|&#8221;|&quot;/g, '"').replace(/&amp;/g, '&').replace(/&#\d+;/g, '').replace(/\s+/g, ' ').trim();
 async function news() {
   if (MOCK) return [{ src: 'HN', title: 'Example story', link: 'https://news.ycombinator.com', date: now, desc: 'Preview item.' }];
   const all = [];
@@ -210,6 +210,7 @@ async function news() {
         let link = clean(pick(it, 'link')); if (!link) { const m = it.match(/<link[^>]*href="([^"]+)"/i); link = m ? m[1] : ''; }
         const date = new Date(clean(pick(it, 'pubDate') || pick(it, 'published') || pick(it, 'updated')) || now);
         let desc = clean(pick(it, 'description') || pick(it, 'summary') || pick(it, 'content'));
+        if (/^(Article URL|Comments URL)/i.test(desc) || src === 'HN') desc = '';
         if (desc.length > 150) desc = desc.slice(0, 147).replace(/\s+\S*$/, '') + '…';
         if (title && link.startsWith('http')) all.push({ src, title, link, date, desc });
       }
@@ -227,7 +228,7 @@ function newsHeaderSvg(n) {
 <g transform="translate(838 62)"><circle r="3" fill="#FF6482"/><path d="M-3 -10a13 13 0 0 1 13 13M-3 -16a19 19 0 0 1 19 19" stroke="#FF6482" stroke-width="2" fill="none" stroke-linecap="round"/></g>`);
 }
 function newsMarkdown(items) {
-  const cell = it => `<td width="50%" valign="top"><sub><code>${esc(it.src)}</code> ${ago(it.date)}</sub><br><a href="${esc(it.link)}"><b>${esc(it.title)}</b></a><br><sub>${esc(it.desc)}</sub></td>`;
+  const cell = it => `<td width="50%" valign="top"><sub><code>${esc(it.src)}</code> ${ago(it.date)}</sub><br><a href="${esc(it.link)}"><b>${esc(it.title)}</b></a>${it.desc ? `<br><sub>${esc(it.desc)}</sub>` : ''}</td>`;
   let rows = '';
   for (let i = 0; i < items.length; i += 2) rows += `<tr>${cell(items[i])}${items[i + 1] ? cell(items[i + 1]) : '<td></td>'}</tr>\n`;
   return `<table>\n${rows}</table>`;
