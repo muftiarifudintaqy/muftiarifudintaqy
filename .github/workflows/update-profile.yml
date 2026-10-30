@@ -1,12 +1,15 @@
-name: Update profile stats
+name: Update profile
 on:
   schedule:
-    - cron: "0 22 * * *"   # setiap hari jam 05:00 WIB
+    - cron: "0 */6 * * *"   # every 6 hours
   workflow_dispatch: {}
   push:
     paths: ["scripts/**", ".github/workflows/**"]
 permissions:
   contents: write
+concurrency:
+  group: profile
+  cancel-in-progress: true
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,7 +18,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: node scripts/build-stats.mjs
+      - run: node scripts/build.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_LOGIN: ${{ github.repository_owner }}
@@ -23,6 +26,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/stats-*.svg
-          git diff --cached --quiet || git commit -m "Update profile stats"
+          git add -A assets README.md
+          git diff --cached --quiet || git commit -m "Refresh profile panels"
           git push

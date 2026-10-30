@@ -1,29 +1,38 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img src="assets/header-light.svg" width="100%" alt="Mufti Arifudin Taqy, Full Stack Developer">
-</picture>
+<div align="center">
 
-I build and run the internal systems of a multi-brand beauty company in Indonesia: the ERP, Shopee and TikTok Shop integrations, Meta Ads reporting and the server it all runs on. Every report is reconciled against its source until the difference is zero.
+<img src="assets/hero.svg" width="100%" alt="Mufti Arifudin Taqy, Full Stack Developer for ERP, marketplace APIs and automation">
 
-**Portfolio** [muftzyxslwly.my.id](https://muftzyxslwly.my.id) &nbsp;|&nbsp; **LinkedIn** [muftiarifudintaqy](https://www.linkedin.com/in/muftiarifudintaqy) &nbsp;|&nbsp; **Email** [muftiarifudintaqy0@gmail.com](mailto:muftiarifudintaqy0@gmail.com) &nbsp;|&nbsp; **Instagram** [@xyzmuff_](https://www.instagram.com/xyzmuff_/)
+<a href="https://muftzyxslwly.my.id"><img src="assets/btn-portfolio.svg" height="46" alt="Portfolio"></a>
+<a href="https://www.linkedin.com/in/muftiarifudintaqy"><img src="assets/btn-linkedin.svg" height="46" alt="LinkedIn"></a>
+<a href="https://www.instagram.com/xyzmuff_/"><img src="assets/btn-instagram.svg" height="46" alt="Instagram"></a>
+<a href="mailto:muftiarifudintaqy0@gmail.com"><img src="assets/btn-email.svg" height="46" alt="Email"></a>
 
-### Selected work
+<br><br>
 
-| Project | What it does | Stack |
-|---|---|---|
-| [Montera ERP](https://muftzyxslwly.my.id/case-erp.html) | Orders, waybills, payouts, stock, profit, warehouse and HR for two brands, checked against the marketplaces every day | PHP, CodeIgniter, MySQL |
-| [Ads Reporting Automation](https://muftzyxslwly.my.id/case-ads.html) | Daily reporting for 40+ Meta ad accounts, synced with the team's Google Sheets | Meta Marketing API, Apps Script |
-| [Affiliate WhatsApp Inbox](https://muftzyxslwly.my.id/case-inbox.html) | One web inbox for six affiliate WhatsApp numbers, with an audit log | Node.js, Baileys, MySQL |
-| [JNE Attendance System](https://github.com/NabihanN06/jne_attandance) | Team project: face and GPS attendance app; I built the Flutter employee app | Flutter, Firebase |
+<img src="assets/about.svg" width="100%" alt="About: Full Stack Developer at Montera Group building ERP, marketplace integrations and Meta Ads reporting">
 
-The ERP, ads and inbox systems are private company code. The case studies explain how they work.
+<a href="https://muftzyxslwly.my.id/case-erp.html"><img src="assets/card-erp.svg" width="49%" alt="Montera ERP case study"></a>
+<a href="https://muftzyxslwly.my.id/case-ads.html"><img src="assets/card-ads.svg" width="49%" alt="Ads Reporting case study"></a>
+<a href="https://muftzyxslwly.my.id/case-inbox.html"><img src="assets/card-inbox.svg" width="49%" alt="Affiliate WhatsApp Inbox case study"></a>
+<a href="https://github.com/NabihanN06/jne_attandance"><img src="assets/card-jne.svg" width="49%" alt="JNE Attendance System repository"></a>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
-  <img src="assets/stack-light.svg" width="100%" alt="Tech stack">
-</picture>
+<sub>ERP, ads and inbox are private company systems. The case studies explain how they work.</sub>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
-  <img src="assets/stats-light.svg" width="100%" alt="GitHub activity in the last year">
-</picture>
+<br><br>
+
+<img src="assets/stack.svg" width="100%" alt="Tech stack">
+
+<img src="assets/stats.svg" width="100%" alt="GitHub contribution stats">
+
+<img src="assets/skyline.svg" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+
+<img src="assets/news.svg" width="100%" alt="Dev news">
+
+</div>
+
+<!--NEWS:START-->
+<!--NEWS:END-->
+
+<div align="center">
+<img src="assets/footer.svg" width="100%" alt="Thanks for stopping by">
+</div>
