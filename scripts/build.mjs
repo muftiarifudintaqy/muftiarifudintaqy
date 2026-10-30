@@ -476,6 +476,10 @@ const items = await news();
 writeFileSync('assets/news.svg', newsHeaderSvg(items.length));
 writeFileSync('assets/footer.svg', footerSvg());
 const readme = readFileSync('README.md', 'utf8');
-const out = readme.replace(/<!--NEWS:START-->[\s\S]*<!--NEWS:END-->/, `<!--NEWS:START-->\n${newsMarkdown(items)}\n<!--NEWS:END-->`);
+const ver = Math.floor(now.getTime() / 1000);
+const out = readme
+  .replace(/<!--NEWS:START-->[\s\S]*<!--NEWS:END-->/, `<!--NEWS:START-->\n${newsMarkdown(items)}\n<!--NEWS:END-->`)
+  // new URL every run so GitHub's image cache always shows the latest panels
+  .replace(/assets\/(stats|skyline|news|pulse|footer)\.svg(\?v=\d+)?/g, (m, n) => `assets/${n}.svg?v=${ver}`);
 writeFileSync('README.md', out);
 console.log(`ok: ${s.year} contributions last year, ${t.allTime} all time, ${items.length} news items`);
