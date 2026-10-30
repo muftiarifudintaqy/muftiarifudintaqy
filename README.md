@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/hero.svg" width="100%" alt="Mufti Arifudin Taqy, Full Stack Developer for ERP, marketplace APIs and automation">
+<img src="assets/hero-scan.svg" width="100%" alt="Mufti Arifudin Taqy, Full Stack Developer for ERP, marketplace APIs and automation">
 
 <a href="https://muftzyxslwly.my.id"><img src="assets/btn-portfolio.svg" height="46" alt="Portfolio"></a>
 <a href="https://www.linkedin.com/in/muftiarifudintaqy"><img src="assets/btn-linkedin.svg" height="46" alt="LinkedIn"></a>
