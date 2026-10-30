@@ -219,7 +219,7 @@ async function news() {
   // 2 per source first, newest first, 10 total
   const per = {}; const out = [];
   for (const it of all.sort((a, b) => b.date - a.date)) { per[it.src] = (per[it.src] || 0) + 1; if (per[it.src] <= 2) out.push(it); }
-  return out.slice(0, 10);
+  return out.slice(0, 6);
 }
 const ago = d => { const m = Math.max(1, Math.round((now - d) / 60000)); return m < 60 ? `${m}m ago` : m < 1440 ? `${Math.round(m / 60)}h ago` : `${Math.round(m / 1440)}d ago`; };
 function newsHeaderSvg(n) {
@@ -282,28 +282,55 @@ function simulateSnake(cols) {
     while (q.length) { const c = q.shift(); for (const d of dirs) { const n = [c[0] + d[0], c[1] + d[1]], nk = key(...n); if (inside(...n) && !block.has(nk) && !seen.has(nk)) { seen.add(nk); q.push(n); } } }
     return seen.size;
   }
-  let guard = 0;
-  while (food.size && guard++ < 4000) {
-    const route = bfs(head, body);
-    let step;
-    if (route && route.length) step = route[0];
-    else {
-      const opts = dirs.map(d => [head[0] + d[0], head[1] + d[1]]).filter(n => inside(...n) && !blocked(body).has(key(...n)));
-      if (!opts.length) break;
-      opts.sort((p, q) => space(q, [q, ...body]) - space(p, [p, ...body]));
-      step = opts[0];
+  // path from a to b avoiding the body (the tail cell is free because it moves away)
+  function route(a, b, bodyNow, goalSet) {
+    const block = new Set(bodyNow.slice(0, -1).map(p => key(p[0], p[1])));
+    const prev = new Map([[key(...a), null]]), q = [a];
+    while (q.length) {
+      const c = q.shift(), ck = key(...c);
+      if ((goalSet ? goalSet.has(ck) : ck === key(...b)) && ck !== key(...a)) {
+        const r = []; let k = ck; while (prev.get(k)) { r.push(k.split(',').map(Number)); k = prev.get(k); } return r.reverse();
+      }
+      for (const d of dirs) { const n = [c[0] + d[0], c[1] + d[1]], nk = key(...n); if (!inside(...n) || block.has(nk) || prev.has(nk)) continue; prev.set(nk, ck); q.push(n); }
     }
+    return null;
+  }
+  // play the route virtually and check the snake can still reach its own tail afterwards
+  function safeAfter(r, bodyNow, lenNow) {
+    let b = bodyNow.map(p => p.slice()), l = lenNow;
+    for (const st of r) { b.unshift(st.slice()); if (food.has(key(...st))) l++; while (b.length > l) b.pop(); }
+    if (b.length < 4) return true;
+    return !!route(b[0], b[b.length - 1], b, null);
+  }
+  function moveTo(step) {
     dir = [step[0] - head[0], step[1] - head[1]];
-    head = step; path.push(head.slice());
-    body.unshift(head.slice());
+    head = step; path.push(head.slice()); body.unshift(head.slice());
     const k = key(...head);
     if (food.has(k)) { len++; eats.push({ tick: path.length - 1, date: food.get(k), len }); food.delete(k); }
     while (body.length > len) body.pop();
   }
-  // game over: keep going straight until the snake hits the wall
-  while (inside(head[0] + dir[0], head[1] + dir[1])) { head = [head[0] + dir[0], head[1] + dir[1]]; path.push(head.slice()); }
-  path.push([head[0] + dir[0] * 0.45, head[1] + dir[1] * 0.45]); // bump into the wall
-  return { path, eats, init: INIT, finalLen: len, crashTick: path.length - 1 };
+  let guard = 0;
+  while (food.size && guard++ < 6000) {
+    const foodSet = new Set(food.keys());
+    const r = route(head, null, body, foodSet);
+    if (r && safeAfter(r, body, len)) { moveTo(r[0]); continue; }
+    // not safe: chase the tail (longest-looking safe move) until a safe food route opens up
+    const opts = dirs.map(d => [head[0] + d[0], head[1] + d[1]])
+      .filter(n => inside(...n) && !new Set(body.slice(0, -1).map(p => key(...p))).has(key(...n)));
+    if (!opts.length) break;
+    const scored = opts.map(n => {
+      const b2 = [n, ...body]; if (!food.has(key(...n))) b2.pop();
+      const tail = b2[b2.length - 1], toTail = route(n, tail, b2, null);
+      return { n, ok: !!toTail, dist: toTail ? toTail.length : -1, sp: space(n, b2) };
+    }).sort((p, q) => (q.ok - p.ok) || (q.dist - p.dist) || (q.sp - p.sp));
+    moveTo(scored[0].n);
+  }
+  const victory = food.size === 0;
+  if (!victory) { // stuck: keep going straight until the snake hits the wall
+    while (inside(head[0] + dir[0], head[1] + dir[1])) { head = [head[0] + dir[0], head[1] + dir[1]]; path.push(head.slice()); }
+    path.push([head[0] + dir[0] * 0.45, head[1] + dir[1] * 0.45]);
+  }
+  return { path, eats, init: INIT, finalLen: len, victory, total: eats.length + food.size };
 }
 
 function pulseSvg(days, s) {
@@ -315,7 +342,8 @@ function pulseSvg(days, s) {
   const P = (x, y) => [gx + x * step + cell / 2, gy + y * step + cell / 2];
 
   const g = simulateSnake(cols);
-  const TICK = 0.11, N = g.path.length - 1, RUN = N * TICK, HOLD = 1.6, D = +(RUN + HOLD).toFixed(3);
+  const TICK = 0.11, N = g.path.length - 1, RUN = N * TICK, HOLD = g.victory ? 4.2 : 1.6, D = +(RUN + HOLD).toFixed(3);
+  const END = D - 0.35; // fade out just before the loop restarts
   const pct = t => (t / D * 100).toFixed(3);
   const pathD = 'M' + g.path.map(p => P(...p).map(v => v.toFixed(1)).join(' ')).join(' L');
 
@@ -345,7 +373,7 @@ function pulseSvg(days, s) {
     const f = Math.max(0, (N - i) / N).toFixed(5);
     segs += `<g class="s s${i}"><g><animateMotion dur="${D}s" repeatCount="indefinite" rotate="auto" calcMode="linear" keyPoints="0;0;${f};${f}" keyTimes="0;${(i * TICK / D).toFixed(5)};${(RUN / D).toFixed(5)};1"><mpath href="#route" xlink:href="#route"/></animateMotion>
 <ellipse rx="${(r * 1.3).toFixed(2)}" ry="${r.toFixed(2)}" fill="${rgb(c)}" stroke="${rgb(c, 0.55)}" stroke-width=".8"/><path d="M${(-r * .55).toFixed(1)} ${(-r * .55).toFixed(1)}q${(r * .45).toFixed(1)} ${(r * .45).toFixed(1)} 0 ${(r * 1.1).toFixed(1)}M${(r * .15).toFixed(1)} ${(-r * .6).toFixed(1)}q${(r * .45).toFixed(1)} ${(r * .5).toFixed(1)} 0 ${(r * 1.2).toFixed(1)}" stroke="${rgb(c, 0.62)}" stroke-width="1" fill="none"/><ellipse cx="0" cy="${(-r * .38).toFixed(1)}" rx="${(r * .6).toFixed(1)}" ry="${(r * .22).toFixed(1)}" fill="#fff" opacity=".22"/></g></g>`;
-    segStyle += `.s${i}{animation:v${i} ${D}s linear infinite}@keyframes v${i}{0%,${pct(Math.max(0, t0 - 0.001))}%{opacity:0}${pct(t0)}%,${pct(RUN + 0.5)}%{opacity:1}${pct(RUN + 1.2)}%,100%{opacity:0}}`;
+    segStyle += `.s${i}{animation:v${i} ${D}s linear infinite}@keyframes v${i}{0%,${pct(Math.max(0, t0 - 0.001))}%{opacity:0}${pct(t0)}%,${pct(g.victory ? END - 0.3 : RUN + 0.5)}%{opacity:1}${pct(g.victory ? END : RUN + 1.2)}%,100%{opacity:0}}`;
   }
   // head: faces +x, rotates with the path
   const head = `<g class="hd"><g><animateMotion dur="${D}s" repeatCount="indefinite" rotate="auto" calcMode="linear" keyPoints="0;1;1" keyTimes="0;${(RUN / D).toFixed(5)};1"><mpath href="#route" xlink:href="#route"/></animateMotion>
@@ -365,8 +393,40 @@ function pulseSvg(days, s) {
     scoreStyle += `.c${i}{opacity:0;animation:k${i} ${D}s steps(1,end) infinite}@keyframes k${i}{0%{opacity:0}${pct(t0)}%{opacity:1}${pct(Math.min(t1, D - 0.001))}%,100%{opacity:0}}`;
   });
 
-  const over = `<g class="go"><rect x="${gx}" y="${gy}" width="${gw}" height="${gh}" rx="6" fill="#FF453A" opacity=".10"/>
-<text x="${W / 2}" y="${gy + gh / 2 + 5}" text-anchor="middle" class="mono" font-size="15" font-weight="800" letter-spacing="4" fill="#FF6482">GAME OVER · ${g.finalLen - g.init} COMMIT-DAYS EATEN · RESTARTING</text></g>`;
+  let over = '', fx = '', overStyle = '';
+  if (g.victory) {
+    // shimmer wave across every block, then a glitchy VICTORY title
+    let shine = '', sparks = '';
+    cols.forEach((wk, x) => wk.forEach((d, y) => {
+      const delay = RUN + 0.35 + (x + y * 2) * 0.018;
+      shine += `<rect x="${gx + x * step}" y="${gy + y * step}" width="${cell}" height="${cell}" rx="3" fill="url(#shg)" class="sh" style="animation-delay:${delay.toFixed(3)}s"/>`;
+    }));
+    let sd = 11; const r2 = () => (sd = (sd * 9301 + 49297) % 233280) / 233280;
+    for (let i = 0; i < 26; i++) {
+      const x = gx + r2() * gw, y = gy + r2() * gh, z = 2 + r2() * 3.5, dl = RUN + 0.6 + r2() * 2.6;
+      sparks += `<path d="M${x.toFixed(1)} ${(y - z).toFixed(1)}L${(x + z * .28).toFixed(1)} ${(y - z * .28).toFixed(1)}L${(x + z).toFixed(1)} ${y.toFixed(1)}L${(x + z * .28).toFixed(1)} ${(y + z * .28).toFixed(1)}L${x.toFixed(1)} ${(y + z).toFixed(1)}L${(x - z * .28).toFixed(1)} ${(y + z * .28).toFixed(1)}L${(x - z).toFixed(1)} ${y.toFixed(1)}L${(x - z * .28).toFixed(1)} ${(y - z * .28).toFixed(1)}Z" fill="#fff" class="sp" style="animation-delay:${dl.toFixed(2)}s"/>`;
+    }
+    const ty = gy + gh / 2 + 9, sub = `PERFECT RUN · ${g.total}/${g.total} COMMIT-DAYS EATEN · LENGTH ${g.finalLen}`;
+    over = `${shine}${sparks}<g class="vc">
+<rect x="${W / 2 - 230}" y="${gy + gh / 2 - 30}" width="460" height="60" rx="10" fill="#050507" opacity=".82"/>
+<text x="${W / 2 - 2}" y="${ty}" text-anchor="middle" font-size="30" font-weight="900" letter-spacing="10" fill="#28D7FF" class="gl1">VICTORY</text>
+<text x="${W / 2 + 2}" y="${ty}" text-anchor="middle" font-size="30" font-weight="900" letter-spacing="10" fill="#FF3B6B" class="gl2">VICTORY</text>
+<text x="${W / 2}" y="${ty}" text-anchor="middle" font-size="30" font-weight="900" letter-spacing="10" fill="url(#vg)">VICTORY</text>
+<text x="${W / 2}" y="${ty + 17}" text-anchor="middle" class="mono" font-size="9" letter-spacing="2" fill="#FEBC2E">${sub}</text></g>`;
+    overStyle = `.sh{opacity:0;animation:shw ${D}s linear infinite both}@keyframes shw{0%{opacity:0}${pct(0.38)}%{opacity:.95}${pct(1.1)}%,100%{opacity:0}}
+.sp{opacity:0;transform-box:fill-box;transform-origin:center;animation:spk ${D}s ease-out infinite both}@keyframes spk{0%{opacity:0;transform:scale(.2) rotate(0)}${pct(0.4)}%{opacity:1;transform:scale(1.2) rotate(45deg)}${pct(1)}%,100%{opacity:0;transform:scale(.4) rotate(90deg)}}
+.vc{opacity:0;animation:vc ${D}s linear infinite}@keyframes vc{0%,${pct(RUN + 0.2)}%{opacity:0}${pct(RUN + 0.45)}%,${pct(END - 0.1)}%{opacity:1}${pct(END)}%,100%{opacity:0}}
+.gl1{animation:g1 .45s steps(2,end) infinite}.gl2{animation:g2 .5s steps(2,end) infinite}
+@keyframes g1{0%{transform:translate(-2px,0)}50%{transform:translate(2px,-1px)}100%{transform:translate(-1px,1px)}}
+@keyframes g2{0%{transform:translate(2px,1px)}50%{transform:translate(-2px,0)}100%{transform:translate(1px,-1px)}}`;
+    fx = `<linearGradient id="vg" x1="0" x2="1"><stop offset="0" stop-color="#FFE29A"/><stop offset=".5" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FEBC2E"/></linearGradient>
+<linearGradient id="shg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".1"/><stop offset=".5" stop-color="#fff"/><stop offset="1" stop-color="#FEBC2E" stop-opacity=".4"/></linearGradient>`;
+  } else {
+    over = `<g class="go"><rect x="${gx}" y="${gy}" width="${gw}" height="${gh}" rx="6" fill="#FF453A" opacity=".10"/>
+<rect x="${W / 2 - 250}" y="${gy + gh / 2 - 18}" width="500" height="34" rx="8" fill="#050507" opacity=".85"/>
+<text x="${W / 2}" y="${gy + gh / 2 + 5}" text-anchor="middle" class="mono" font-size="14" font-weight="800" letter-spacing="4" fill="#FF6482">GAME OVER · ${g.finalLen - g.init} EATEN · RESTARTING</text></g>`;
+    overStyle = `.go{opacity:0;animation:go ${D}s linear infinite}@keyframes go{0%,${pct(RUN)}%{opacity:0}${pct(RUN + 0.15)}%,${pct(RUN + 1.3)}%{opacity:1}${pct(RUN + 1.5)}%,100%{opacity:0}}`;
+  }
 
   const inner = `${windowBar(24, 20, 852, H - 40, '~/activity --play snake', `${fmt(s.year)} commits · ${g.eats.length} active days`)}
 <text x="48" y="84" class="mono" font-size="10" fill="${C.sub}"><tspan fill="#28C840">●</tspan> every commit-day is food · the snake grows one block per bite · crash = restart</text>
@@ -379,12 +439,12 @@ ${over}
   return shell(W, H, inner,
     `<path id="route" d="${pathD}"/>
 <clipPath id="board"><rect x="${gx - 6}" y="${gy - 6}" width="${gw + 12}" height="${gh + 12}" rx="8"/></clipPath>
-<radialGradient id="headg" cx=".65" cy=".5" r=".7"><stop offset="0" stop-color="#FF8FB0"/><stop offset=".6" stop-color="#FF6482"/><stop offset="1" stop-color="#C2306A"/></radialGradient>`,
+${fx}<radialGradient id="headg" cx=".65" cy=".5" r=".7"><stop offset="0" stop-color="#FF8FB0"/><stop offset=".6" stop-color="#FF6482"/><stop offset="1" stop-color="#C2306A"/></radialGradient>`,
     `.f{transform-box:fill-box;transform-origin:center;animation-duration:${D}s;animation-timing-function:linear;animation-iteration-count:infinite}
 ${segStyle}${scoreStyle}
-.hd{animation:hv ${D}s linear infinite}@keyframes hv{0%,${pct(RUN + 0.5)}%{opacity:1}${pct(RUN + 1.2)}%,100%{opacity:0}}
+.hd{animation:hv ${D}s linear infinite}@keyframes hv{0%,${pct(g.victory ? END - 0.3 : RUN + 0.5)}%{opacity:1}${pct(g.victory ? END : RUN + 1.2)}%,100%{opacity:0}}
 .tg{animation:tg .9s steps(2,end) infinite}@keyframes tg{50%{opacity:0}}
-.go{opacity:0;animation:go ${D}s linear infinite}@keyframes go{0%,${pct(RUN)}%{opacity:0}${pct(RUN + 0.15)}%,${pct(RUN + 1.3)}%{opacity:1}${pct(RUN + 1.5)}%,100%{opacity:0}}`);
+${overStyle}`);
 }
 
 // ---------------- footer ----------------
