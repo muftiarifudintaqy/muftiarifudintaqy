@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1793382533" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1793397626" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1793382533" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1793397626" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1793382533" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1793397626" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 2m ago</sub><br><a href="https://dev.to/anuj-sadani/set-up-a-mac-for-ai-development-by-starting-with-your-repos-5gfe"><b>Set Up a Mac for AI Development by Starting With Your Repos</b></a><br><sub>A new Mac does not need every developer tool. It needs the tools your actual projects use. I built an interactive setup guide after moving a large…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 3m ago</sub><br><a href="https://dev.to/fabiancooper/bolted-on-or-built-in-why-we-added-ai-is-not-an-ai-strategy-4k3n"><b>Bolted On or Built In: Why &quot;We Added AI&quot; Is Not an AI Strategy</b></a><br><sub>The copilot in the corner Walk into almost any company that will tell you it is &quot;doing AI&quot; and you will find the same artefact: a copilot in the…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 19m ago</sub><br><a href="https://www.armytimes.com/news/your-army/2026/10/26/army-practices-digging-temporary-battlefield-graves/"><b>US Army practices digging temporary battlefield graves</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 24m ago</sub><br><a href="https://www.404media.co/protons-ceo-cancels-ai-re-interviews/"><b>Proton's CEO Cancels AI 'Re-Interviews'</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 4h ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-detect-financial-fraud-patterns-with-knowledge-graphs-a-production-guide/"><b>How to Detect Financial Fraud Patterns with Knowledge Graphs: A Production Guide</b></a><br><sub>Most anti-fraud architectures in enterprise payment workflows evaluate transactions in isolation. When an invoice arrives, an automated rules…</sub></td><td width="50%" valign="top"><sub><code>LARAVEL</code> 19h ago</sub><br><a href="https://laravel-news.com/laravel-delete-expired-sessions?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed%3A+laravelnews"><b>Delete Expired Sessions in Laravel With a Scheduled Command</b></a><br><sub>Schedule session:garbage-collect to delete expired Laravel database and file sessions, and turn off the session lottery that runs cleanup in web…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 9m ago</sub><br><a href="https://dev.to/guiguisada/i-made-a-claude-code-skill-inspired-by-jordan-petersons-essay-writing-guide-j1a"><b>I made a Claude Code skill inspired by Jordan Peterson’s essay-writing guide</b></a><br><sub>I made JP Essay, an open-source skill that takes Claude Code through research, outlining, drafting, revision, and fact-checking to produce one…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 9m ago</sub><br><a href="https://dev.to/tridaai/who-do-your-deployment-engineers-work-for-2bhh"><b>Who Do Your Deployment Engineers Work For?</b></a><br><sub>Originally published at Trida AI . Anthropic sells models. This month it committed $100 million to something else: training engineers it doesn't…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 8h ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-detect-financial-fraud-patterns-with-knowledge-graphs-a-production-guide/"><b>How to Detect Financial Fraud Patterns with Knowledge Graphs: A Production Guide</b></a><br><sub>Most anti-fraud architectures in enterprise payment workflows evaluate transactions in isolation. When an invoice arrives, an automated rules…</sub></td><td width="50%" valign="top"><sub><code>LARAVEL</code> 23h ago</sub><br><a href="https://laravel-news.com/laravel-delete-expired-sessions?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed%3A+laravelnews"><b>Delete Expired Sessions in Laravel With a Scheduled Command</b></a><br><sub>Schedule session:garbage-collect to delete expired Laravel database and file sessions, and turn off the session lottery that runs cleanup in web…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 1d ago</sub><br><a href="https://www.freecodecamp.org/news/ai-search-visibility/"><b>How AI-Powered Search Works: A Guide for Devs on AI Visibility</b></a><br><sub>Searched worked in a familiar way for decades: you'd type in your query, get back a list of pages, and choose one to click on. Behind the scenes,…</sub></td><td width="50%" valign="top"><sub><code>NODE.JS</code> 1d ago</sub><br><a href="https://nodejs.org/en/blog/release/v27.0.0-alpha.0.0.0"><b>Node.js 27.0.0-alpha.0.0.0 (Alpha)</b></a></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1793382533" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1793397626" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1793382533" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1793397626" width="100%" alt="Thanks for stopping by">
 </div>
