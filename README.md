@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1793351264" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1793382533" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1793351264" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1793382533" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1793351264" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1793382533" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 7m ago</sub><br><a href="https://dev.to/adilsoukaini/laravel-vs-nodejs-for-a-startup-backend-how-to-choose-488"><b>Laravel vs Node.js for a startup backend: how to choose</b></a><br><sub>Originally published on shipfastdev.com . For most startup backends, both Laravel and Node.js will do the job; the better choice depends on your…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 8m ago</sub><br><a href="https://dev.to/ohugonnot/single-agent-vs-multi-agent-11-ai-agents-50-and-zero-lines-of-code-5b1d"><b>Single Agent vs Multi-Agent: 11 AI Agents, $50 and Zero Lines of Code</b></a><br><sub>An AI agent is a program that makes a language model act in a loop. It reads files, runs commands and writes edits, until a task is done. The…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://www.theguardian.com/business/live/2026/oct/30/uk-house-price-growth-crypto-industry-6bn-binance-hack-eurozone-france-gdp-latest-news-updates"><b>'Elite North Korean hackers' blamed for $6.3B Binance hack</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://www.workatastartup.com/jobs/98722"><b>Wasmer (YC S19) Is Hiring OS/Hypervisor Experts in Europe</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 11h ago</sub><br><a href="https://www.freecodecamp.org/news/ai-search-visibility/"><b>How AI-Powered Search Works: A Guide for Devs on AI Visibility</b></a><br><sub>Searched worked in a familiar way for decades: you'd type in your query, get back a list of pages, and choose one to click on. Behind the scenes,…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 12h ago</sub><br><a href="https://www.freecodecamp.org/news/learn-real-world-penetration-testing-hands-on-ethical-hacking-crash-course/"><b>Learn Real-World Penetration Testing: Hands-On Ethical Hacking Crash Course</b></a><br><sub>Understanding how malicious actors infiltrate networks is the first step to building resilient infrastructure. To help developers and aspiring…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 2m ago</sub><br><a href="https://dev.to/anuj-sadani/set-up-a-mac-for-ai-development-by-starting-with-your-repos-5gfe"><b>Set Up a Mac for AI Development by Starting With Your Repos</b></a><br><sub>A new Mac does not need every developer tool. It needs the tools your actual projects use. I built an interactive setup guide after moving a large…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 3m ago</sub><br><a href="https://dev.to/fabiancooper/bolted-on-or-built-in-why-we-added-ai-is-not-an-ai-strategy-4k3n"><b>Bolted On or Built In: Why &quot;We Added AI&quot; Is Not an AI Strategy</b></a><br><sub>The copilot in the corner Walk into almost any company that will tell you it is &quot;doing AI&quot; and you will find the same artefact: a copilot in the…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 19m ago</sub><br><a href="https://www.armytimes.com/news/your-army/2026/10/26/army-practices-digging-temporary-battlefield-graves/"><b>US Army practices digging temporary battlefield graves</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 24m ago</sub><br><a href="https://www.404media.co/protons-ceo-cancels-ai-re-interviews/"><b>Proton's CEO Cancels AI 'Re-Interviews'</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 4h ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-detect-financial-fraud-patterns-with-knowledge-graphs-a-production-guide/"><b>How to Detect Financial Fraud Patterns with Knowledge Graphs: A Production Guide</b></a><br><sub>Most anti-fraud architectures in enterprise payment workflows evaluate transactions in isolation. When an invoice arrives, an automated rules…</sub></td><td width="50%" valign="top"><sub><code>LARAVEL</code> 19h ago</sub><br><a href="https://laravel-news.com/laravel-delete-expired-sessions?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed%3A+laravelnews"><b>Delete Expired Sessions in Laravel With a Scheduled Command</b></a><br><sub>Schedule session:garbage-collect to delete expired Laravel database and file sessions, and turn off the session lottery that runs cleanup in web…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1793351264" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1793382533" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1793351264" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1793382533" width="100%" alt="Thanks for stopping by">
 </div>
