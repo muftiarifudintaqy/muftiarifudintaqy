@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1793537403" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1793569710" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1793537403" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1793569710" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1793537403" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1793569710" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 12m ago</sub><br><a href="https://dev.to/paladini/find-missing-loading-and-error-states-in-nextjs-with-unhappypath-amn"><b>Find Missing Loading and Error States in Next.js with unhappypath</b></a><br><sub>AI coding tools are good at making the successful path visible quickly. They can produce a page that loads data, accepts a form, and responds to a…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 12m ago</sub><br><a href="https://dev.to/daniel_pertu/a-436-word-static-page-on-our-site-downloads-263-kb-of-javascript-and-a-quarter-of-it-is-a-3him"><b>A 436-word static page on our site downloads 263 KB of JavaScript, and a quarter of it is a realtime client we never open</b></a><br><sub>munchable.app/is-yogurt-ok-for-sibo is one of 461 pages on our site that answer a single question about a single ingredient. It is prerendered at…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://noyb.eu/en/noyb-win-french-electronics-retailer-fnac-darty-fined-eu7-million"><b>noyb win: French electronics retailer Fnac Darty fined €7M</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://www.visitnorway.com/plan-your-trip/travel-tips-a-z/norwegian-scenic-routes/worlds-best-toilets/"><b>Norway makes shithouses great again</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 2d ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-detect-financial-fraud-patterns-with-knowledge-graphs-a-production-guide/"><b>How to Detect Financial Fraud Patterns with Knowledge Graphs: A Production Guide</b></a><br><sub>Most anti-fraud architectures in enterprise payment workflows evaluate transactions in isolation. When an invoice arrives, an automated rules…</sub></td><td width="50%" valign="top"><sub><code>LARAVEL</code> 3d ago</sub><br><a href="https://laravel-news.com/laravel-delete-expired-sessions?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed%3A+laravelnews"><b>Delete Expired Sessions in Laravel With a Scheduled Command</b></a><br><sub>Schedule session:garbage-collect to delete expired Laravel database and file sessions, and turn off the session lottery that runs cleanup in web…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 1m ago</sub><br><a href="https://dev.to/vuhung16au/diem-tin-tri-tue-nhan-tao-mo-hinh-ngon-ngu-lon-llms-tai-viet-nam-02112026-2dob"><b>Điểm tin Trí tuệ Nhân tạo &amp; Mô hình Ngôn ngữ lớn (LLMs) tại Việt Nam (02/11/2026)</b></a><br><sub>Điểm tin Trí tuệ Nhân tạo &amp;amp; Mô hình Ngôn ngữ lớn (LLMs) tại Việt Nam (02/11/2026) Bản tổng hợp các chuyển động, chính sách và giải pháp công…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 1m ago</sub><br><a href="https://dev.to/aligmentinsight/i-built-a-programming-language-where-every-value-is-an-ai-agent-4lpm"><b>I Built a Programming Language Where Every Value Is an AI Agent</b></a><br><sub>Every orchestration framework I used managed calls. None of them managed the organization. So I stopped building on frameworks and built a…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 13m ago</sub><br><a href="https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/"><b>Game Off 2026: The theme is SHIFT</b></a><br><sub>GitHub’s annual month-long game jam is back for its 14th year! This November, make a game inspired by the theme SHIFT. Change gears, swap…</sub></td><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://www.doctorwhonews.net/2026/11/john_leeson_1943_2026.html"><b>John Leeson (the voice of K9) has died</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 3h ago</sub><br><a href="https://www.bloomberg.com/news/articles/2026-10-31/us-jobs-pickup-may-keep-fed-on-track-to-hike-rates-again"><b>US Jobs Pickup May Keep Fed on Track to Hike Rates Again</b></a></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 2d ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-detect-financial-fraud-patterns-with-knowledge-graphs-a-production-guide/"><b>How to Detect Financial Fraud Patterns with Knowledge Graphs: A Production Guide</b></a><br><sub>Most anti-fraud architectures in enterprise payment workflows evaluate transactions in isolation. When an invoice arrives, an automated rules…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1793537403" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1793569710" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1793537403" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1793569710" width="100%" alt="Thanks for stopping by">
 </div>
