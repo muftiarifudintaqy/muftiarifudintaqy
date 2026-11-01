@@ -5,7 +5,7 @@
 <g clip-path="url(#outer)"><rect width="900" height="104" fill="#050507"/><rect x="24" y="20" width="852" height="64" rx="14" fill="#0D0D12" stroke="#24242C"/>
 <circle cx="42" cy="37" r="4" fill="#FF5F57"/><circle cx="55" cy="37" r="4" fill="#FEBC2E"/><circle cx="68" cy="37" r="4" fill="#28C840"/>
 <text x="84" y="41" class="mono" font-size="11" fill="#8E8E99">~/feed --topic programming</text>
-<text x="860" y="41" class="mono" font-size="11" fill="#8E8E99" text-anchor="end">refreshed 1 Nov 2026 04:08 WIB</text>
+<text x="860" y="41" class="mono" font-size="11" fill="#8E8E99" text-anchor="end">refreshed 1 Nov 2026 11:54 WIB</text>
 <line x1="24" y1="53" x2="876" y2="53" stroke="#24242C"/>
 <text x="48" y="77" class="mono" font-size="11" fill="#8E8E99"><tspan fill="#F5F5F7" font-weight="700" font-size="13" letter-spacing="2">DEV NEWS</tspan>   6 stories from Hacker News, dev.to, Laravel News, GitHub, Node.js and freeCodeCamp</text>
 <g transform="translate(838 62)"><circle r="3" fill="#FF6482"/><path d="M-3 -10a13 13 0 0 1 13 13M-3 -16a19 19 0 0 1 19 19" stroke="#FF6482" stroke-width="2" fill="none" stroke-linecap="round"/></g></g>
