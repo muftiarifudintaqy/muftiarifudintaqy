@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1793569710" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1793595348" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1793569710" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1793595348" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1793569710" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1793595348" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 1m ago</sub><br><a href="https://dev.to/vuhung16au/diem-tin-tri-tue-nhan-tao-mo-hinh-ngon-ngu-lon-llms-tai-viet-nam-02112026-2dob"><b>Điểm tin Trí tuệ Nhân tạo &amp; Mô hình Ngôn ngữ lớn (LLMs) tại Việt Nam (02/11/2026)</b></a><br><sub>Điểm tin Trí tuệ Nhân tạo &amp;amp; Mô hình Ngôn ngữ lớn (LLMs) tại Việt Nam (02/11/2026) Bản tổng hợp các chuyển động, chính sách và giải pháp công…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 1m ago</sub><br><a href="https://dev.to/aligmentinsight/i-built-a-programming-language-where-every-value-is-an-ai-agent-4lpm"><b>I Built a Programming Language Where Every Value Is an AI Agent</b></a><br><sub>Every orchestration framework I used managed calls. None of them managed the organization. So I stopped building on frameworks and built a…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 13m ago</sub><br><a href="https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/"><b>Game Off 2026: The theme is SHIFT</b></a><br><sub>GitHub’s annual month-long game jam is back for its 14th year! This November, make a game inspired by the theme SHIFT. Change gears, swap…</sub></td><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://www.doctorwhonews.net/2026/11/john_leeson_1943_2026.html"><b>John Leeson (the voice of K9) has died</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 3h ago</sub><br><a href="https://www.bloomberg.com/news/articles/2026-10-31/us-jobs-pickup-may-keep-fed-on-track-to-hike-rates-again"><b>US Jobs Pickup May Keep Fed on Track to Hike Rates Again</b></a></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 2d ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-detect-financial-fraud-patterns-with-knowledge-graphs-a-production-guide/"><b>How to Detect Financial Fraud Patterns with Knowledge Graphs: A Production Guide</b></a><br><sub>Most anti-fraud architectures in enterprise payment workflows evaluate transactions in isolation. When an invoice arrives, an automated rules…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 5m ago</sub><br><a href="https://dev.to/marcorojas17/genesis-toluca-global-e8d9eac8-certified-2026-11-01-author-arkhe-zero-51h-meta-ai-5f8p"><b>Genesis: TOLUCA-GLOBAL-e8d9eac8 | Certified: 2026-11-01 | Author: arkhe-zero (51%H) + Meta AI (49%IA) - FIRST EVER</b></a><br><sub>SCDR-002: Building the Legal OS for Human-AI Co-Authorship from Toluca, México I just certified the first ever official Human-AI co-authorship in…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 6m ago</sub><br><a href="https://dev.to/weiyi/how-i-deploy-my-blog-chinese-on-alibaba-cloud-other-languages-on-cloudflare-kg2"><b>How I deploy my blog: Chinese on Alibaba Cloud, other languages on Cloudflare</b></a><br><sub>My blog now uses two domains: weiyii.cn for Chinese, ay3s.com for the other languages. The Chinese site stays on Alibaba Cloud OSS and ESA. The…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 3h ago</sub><br><a href="https://fosscomics.com/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginning%20of%20BSD%20Unix/"><b>F/OSS Comics #13: BSD Unix, Part 3 – The Beginning of BSD Unix</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 3h ago</sub><br><a href="https://www.eurogamer.net/ai-fan-wikis-errors-complicating-games-culture"><b>AI fan wikis riddled with errors are muddying the waters of games culture</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 7h ago</sub><br><a href="https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/"><b>Game Off 2026: The theme is SHIFT</b></a><br><sub>GitHub’s annual month-long game jam is back for its 14th year! This November, make a game inspired by the theme SHIFT. Change gears, swap…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 3d ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-detect-financial-fraud-patterns-with-knowledge-graphs-a-production-guide/"><b>How to Detect Financial Fraud Patterns with Knowledge Graphs: A Production Guide</b></a><br><sub>Most anti-fraud architectures in enterprise payment workflows evaluate transactions in isolation. When an invoice arrives, an automated rules…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1793569710" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1793595348" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1793569710" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1793595348" width="100%" alt="Thanks for stopping by">
 </div>
