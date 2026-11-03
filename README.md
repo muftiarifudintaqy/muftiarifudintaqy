@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1793666492" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1793713628" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1793666492" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1793713628" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1793666492" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1793713628" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 9m ago</sub><br><a href="https://dev.to/alchemicduncan/leveling-up-the-gales-of-november-3d-lakers-and-historical-storytelling-with-gemini-136e"><b>Leveling Up The Gales of November: 3D Lakers and Historical Storytelling with Gemini</b></a><br><sub>When you build a weekend TypeScript simulator around a real historical wreck, getting the basic loop to run is the easy part. For The Gales of…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 10m ago</sub><br><a href="https://dev.to/booktaxisvc/from-website-form-to-drivers-phone-how-a-taxi-booking-form-and-a-dispatch-board-fit-together-555d"><b>From Website Form to Driver's Phone: How a Taxi Booking Form and a Dispatch Board Fit Together</b></a><br><sub>BookTaxiService is booking and dispatch software for small Australian taxi operators. This post follows one booking from the form on an operator's…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 33m ago</sub><br><a href="https://finance.yahoo.com/markets/article/the-intel-stock-collapse-is-getting-worse--and-the-37-trillion-chip-rout-is-spreading-212154947.html"><b>Intel stock collapse worsens as $3.5T chip rout spreads</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://news.ycombinator.com/item?id=50345712"><b>WorkOS reports security breach</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>LARAVEL</code> 10h ago</sub><br><a href="https://laravel-news.com/maileroo-laravel-email-testing?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed%3A+laravelnews"><b>Email Sending and Testing for Laravel in One Account</b></a><br><sub>Send real mail from Laravel and catch test emails in one Maileroo account: SMTP sink, spam and dark-mode checks, and automated tests in CI. The…</sub></td><td width="50%" valign="top"><sub><code>LARAVEL</code> 24h ago</sub><br><a href="https://laravel-news.com/pie-1-5?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed%3A+laravelnews"><b>PIE 1.5 Changes PHP Extension Installs in CI</b></a><br><sub>PIE 1.5 requires explicit extension package choices in CI. See how to update a Laravel projects Redis install and skip development extensions. The…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 2m ago</sub><br><a href="https://dev.to/surya_deekshith_53fc7364c/a-beginners-guide-to-setting-up-mongodb-with-nodejs-4i6o"><b>A Beginner's Guide to Setting Up MongoDB with Node.js</b></a><br><sub>Learn how to connect Node.js to MongoDB, create a database, model data with Mongoose, and build a simple CRUD API — step by step. MongoDB and…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 3m ago</sub><br><a href="https://dev.to/frontendfacile/vector-database-per-frontend-embeddings-similarity-search-e-perche-ti-servono-davvero-nel-2026-6hj"><b>Vector database per frontend: embeddings, similarity search e perché ti servono davvero nel 2026</b></a><br><sub>Dalla matematica minima (vettori, cosine similarity, distanza euclidea) alla pipeline completa: embedding → indicizzazione ANN → ricerca…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://dfarq.homeip.net/charles-tandy-the-mastermind-behind-radio-shack/"><b>Charles Tandy, the mastermind behind Radio Shack</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://honnibal.dev/blog/astra-read-write-misleading"><b>The 'Astra can read and write weights to improve Qwen' post is misleading</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>LARAVEL</code> 23h ago</sub><br><a href="https://laravel-news.com/maileroo-laravel-email-testing?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed%3A+laravelnews"><b>Email Sending and Testing for Laravel in One Account</b></a><br><sub>Send real mail from Laravel and catch test emails in one Maileroo account: SMTP sink, spam and dark-mode checks, and automated tests in CI. The…</sub></td><td width="50%" valign="top"><sub><code>LARAVEL</code> 2d ago</sub><br><a href="https://laravel-news.com/pie-1-5?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed%3A+laravelnews"><b>PIE 1.5 Changes PHP Extension Installs in CI</b></a><br><sub>PIE 1.5 requires explicit extension package choices in CI. See how to update a Laravel projects Redis install and skip development extensions. The…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1793666492" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1793713628" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1793666492" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1793713628" width="100%" alt="Thanks for stopping by">
 </div>
