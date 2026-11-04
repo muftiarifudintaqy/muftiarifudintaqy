@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1793800524" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1793834415" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1793800524" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1793834415" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1793800524" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1793834415" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 3m ago</sub><br><a href="https://dev.to/technoxander/using-rag-in-aml-why-retrieval-quality-matters-more-than-similarity-2e0o"><b>Using RAG in AML: Why Retrieval Quality Matters More Than Similarity</b></a><br><sub>Retrieval-augmented generation (RAG) can help AML teams access relevant information from large collections of case records, policies and…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 3m ago</sub><br><a href="https://dev.to/sachin_gl_f748d6c110dda9/a-beginners-guide-to-rest-apis-with-python-300e"><b>A Beginner's Guide to REST APIs with Python</b></a><br><sub>Introduction REST APIs are a fundamental part of web development, enabling communication between different services and applications. In this…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 50m ago</sub><br><a href="https://jasonpolak.substack.com/p/disaster-is-still-better-than-ai"><b>Disaster is still better than AI</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://lists.debian.org/debian-security-announce/2026/msg00526.html"><b>Debian apt security update: man-in-the-middle arbitrary code execution</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>NODE.JS</code> 15h ago</sub><br><a href="https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"><b>Wednesday, November 11, 2026 Security Releases</b></a></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 19h ago</sub><br><a href="https://www.freecodecamp.org/news/fix-common-technical-seo-issues/"><b>How to Find and Fix Common Technical SEO Issues on Your Website</b></a><br><sub>Let's say you've built a website. You've invested in the design, bought a domain, and so on. But a website isn't only what you see on the screen.…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 2m ago</sub><br><a href="https://dev.to/alifar/organic-search-is-shrinking-while-email-builds-a-more-durable-audience-42pm"><b>Organic Search Is Shrinking, While Email Builds a More Durable Audience</b></a><br><sub>Organic discovery is becoming a less dependable single source of website visits in the data examined by Search Engine Land. At the same time,…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 5m ago</sub><br><a href="https://dev.to/macrun/m6-mac-mini-vs-githubs-hosted-macos-runner-an-xcode-build-benchmark-5efa"><b>M6 Mac mini vs GitHub's hosted macOS runner: an Xcode build benchmark</b></a><br><sub>We wanted a real number for one question. How much faster is a dedicated M6 Mac mini than GitHub's standard hosted macOS runner, on a real iOS…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 19m ago</sub><br><a href="https://blog.samaltman.com/successful-people"><b>Successful People (2013)</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 54m ago</sub><br><a href="https://www.argmin.net/p/less-popular-than-coal"><b>Less Popular Than Coal</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 4h ago</sub><br><a href="https://www.freecodecamp.org/news/introducing-socrates-and-the-new-freecodecamp-forum/"><b>Introducing Socrates and the New freeCodeCamp Forum</b></a><br><sub>freeCodeCamp just turned 12 years old. And so did our beloved forum. And today I'm thrilled to say that the forum is now focused on discussions…</sub></td><td width="50%" valign="top"><sub><code>LARAVEL</code> 23h ago</sub><br><a href="https://laravel-news.com/flock-laravel-local-development?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed%3A+laravelnews"><b>Flock: A Free, Native Herd Alternative for Laravel</b></a><br><sub>Flock is a free, open source local dev app for Laravel that runs PHP, Node, databases, mail, and HTTPS natively on macOS, Windows, and Linux. The…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1793800524" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1793834415" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1793800524" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1793834415" width="100%" alt="Thanks for stopping by">
 </div>
