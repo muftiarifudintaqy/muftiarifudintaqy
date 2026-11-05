@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1793834415" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1793857170" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1793834415" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1793857170" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1793834415" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1793857170" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 2m ago</sub><br><a href="https://dev.to/alifar/organic-search-is-shrinking-while-email-builds-a-more-durable-audience-42pm"><b>Organic Search Is Shrinking, While Email Builds a More Durable Audience</b></a><br><sub>Organic discovery is becoming a less dependable single source of website visits in the data examined by Search Engine Land. At the same time,…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 5m ago</sub><br><a href="https://dev.to/macrun/m6-mac-mini-vs-githubs-hosted-macos-runner-an-xcode-build-benchmark-5efa"><b>M6 Mac mini vs GitHub's hosted macOS runner: an Xcode build benchmark</b></a><br><sub>We wanted a real number for one question. How much faster is a dedicated M6 Mac mini than GitHub's standard hosted macOS runner, on a real iOS…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 19m ago</sub><br><a href="https://blog.samaltman.com/successful-people"><b>Successful People (2013)</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 54m ago</sub><br><a href="https://www.argmin.net/p/less-popular-than-coal"><b>Less Popular Than Coal</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 4h ago</sub><br><a href="https://www.freecodecamp.org/news/introducing-socrates-and-the-new-freecodecamp-forum/"><b>Introducing Socrates and the New freeCodeCamp Forum</b></a><br><sub>freeCodeCamp just turned 12 years old. And so did our beloved forum. And today I'm thrilled to say that the forum is now focused on discussions…</sub></td><td width="50%" valign="top"><sub><code>LARAVEL</code> 23h ago</sub><br><a href="https://laravel-news.com/flock-laravel-local-development?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed%3A+laravelnews"><b>Flock: A Free, Native Herd Alternative for Laravel</b></a><br><sub>Flock is a free, open source local dev app for Laravel that runs PHP, Node, databases, mail, and HTTPS natively on macOS, Windows, and Linux. The…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 3m ago</sub><br><a href="https://dev.to/kushkrg/shopify-analytics-explained-how-to-read-your-store-reports-2fmd"><b>Shopify Analytics Explained: How to Read Your Store Reports</b></a><br><sub>Originally published on CodingCush . Shopify Analytics is the set of dashboards and reports inside your Shopify admin that shows how your store is…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 3m ago</sub><br><a href="https://dev.to/butterneck/agentic-coding-for-product-teams-what-it-is-and-how-non-developers-can-use-it-29af"><b>Agentic coding for product teams: what it is, and how non-developers can use it</b></a><br><sub>Originally published on butterneck.com . &quot;Agentic coding&quot; is the word for AI that doesn't just suggest the next line, but takes a task, reads the…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 5h ago</sub><br><a href="https://www.spacex.com/starfall"><b>Starfall – Affordable, routine access to microgravity</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 6h ago</sub><br><a href="https://openai.com/index/introducing-images-2-6/"><b>Images 2.6</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 8h ago</sub><br><a href="https://www.freecodecamp.org/news/captcha-farm-attack/"><b>What a CAPTCHA Farm Attack Actually Looks Like</b></a><br><sub>CAPTCHAs are something most of us have come across while browsing the internet. Sometimes we're asked to identify traffic lights in pictures,…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 10h ago</sub><br><a href="https://www.freecodecamp.org/news/introducing-socrates-and-the-new-freecodecamp-forum/"><b>Introducing Socrates and the New freeCodeCamp Forum</b></a><br><sub>freeCodeCamp just turned 12 years old. And so did our beloved forum. And today I'm thrilled to say that the forum is now focused on discussions…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1793834415" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1793857170" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1793834415" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1793857170" width="100%" alt="Thanks for stopping by">
 </div>
