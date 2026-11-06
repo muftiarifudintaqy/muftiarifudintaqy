@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1793943350" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1793973188" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1793943350" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1793973188" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1793943350" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1793973188" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 10m ago</sub><br><a href="https://dev.to/xingliao/a-deadbolt-that-scrapes-the-strike-plate-is-draining-its-own-battery-4b8l"><b>A Deadbolt That Scrapes the Strike Plate Is Draining Its Own Battery</b></a><br><sub>A smart lock fails the way a bad hinge fails: slowly, audibly, and in a way everybody learns to ignore. The deadbolt starts needing a half-second…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 11m ago</sub><br><a href="https://dev.to/ahmad_dogar_7d098f5e48f72/seo-for-a-react-spa-without-nextjs-and-without-giving-up-the-3d-homepage-2if5"><b>SEO for a React SPA without Next.js, and without giving up the 3D homepage</b></a><br><sub>This site opens on a small 3D room with an arcade cabinet in it. It is a Vite and React single-page app, and the 3D part loads behind a boot…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 9h ago</sub><br><a href="https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/"><b>Inside GitHub's new Git storage architecture</b></a><br><sub>GitHub's new Git storage architecture is built so thousands of agents can push to a single repository at once. Here's how it works. The post…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 12h ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-use-shadcn-ui-in-react-native-applications-full-handbook/"><b>How to Use shadcn/ui in React Native Applications [Full Handbook]</b></a><br><sub>If you've built a couple of React Native apps, the following probably feels familiar. You start with a colors.ts file and a simple Button…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 14h ago</sub><br><a href="https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/"><b>Accessibility statements now have a home on GitHub</b></a><br><sub>GitHub now highlights ACCESSIBILITY.md files and helps maintainers document accessibility goals, known barriers, supported environments,…</sub></td><td width="50%" valign="top"><sub><code>LARAVEL</code> 16h ago</sub><br><a href="https://laravel-news.com/laravel-herd-2?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed%3A+laravelnews"><b>Laravel Herd 2: Coding Agents, Workspaces, and Cloud Deploys</b></a><br><sub>Laravel Herd 2.0 adds Herd Studio for running coding agents on local sites, git workspaces for parallel work, and Laravel Cloud deploys. The post…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 8m ago</sub><br><a href="https://dev.to/luanerasmus/are-github-actions-still-worth-it-in-the-age-of-agentic-workflows-1p6h"><b>Are GitHub Actions still worth it in the age of agentic workflows?</b></a><br><sub>GitHub Actions are still worth investing in—even as agentic workflows become more capable. Required checks and deployment gates shouldn’t depend…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 9m ago</sub><br><a href="https://dev.to/poowagg/i-built-a-tool-that-turns-40-year-old-banking-packets-into-modern-apis-using-kiro-1ado"><b>I Built a Tool That Turns 40-Year-Old Banking Packets Into Modern APIs — Using Kiro</b></a><br><sub>Every time you tap your card at a terminal, your payment travels through a binary protocol written in 1987. It's called ISO-8583. Banks run it on…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://www.msn.com/en-us/technology/tech-companies/tesla-to-wind-down-cybertruck-production-after-years-of-poor-sales-in-few-markets/ar-AA2gSZGv"><b>Tesla winds down Cybertruck production after years of poor sales in few markets</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://www.ycombinator.com/companies/mbodi-ai/jobs"><b>Mbodi AI (YC P25) Is Hiring Research and Robotic Engineers</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 18h ago</sub><br><a href="https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/"><b>Inside GitHub's new Git storage architecture</b></a><br><sub>GitHub's new Git storage architecture is built so thousands of agents can push to a single repository at once. Here's how it works. The post…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 21h ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-use-shadcn-ui-in-react-native-applications-full-handbook/"><b>How to Use shadcn/ui in React Native Applications [Full Handbook]</b></a><br><sub>If you've built a couple of React Native apps, the following probably feels familiar. You start with a colors.ts file and a simple Button…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1793943350" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1793973188" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1793943350" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1793973188" width="100%" alt="Thanks for stopping by">
 </div>
