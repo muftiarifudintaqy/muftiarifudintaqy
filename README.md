@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1794055066" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1794087227" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1794055066" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1794087227" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1794055066" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1794087227" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 1m ago</sub><br><a href="https://dev.to/lioncoders/peoplepro-connecting-people-payroll-projects-and-customer-work-1ig1"><b>PeoplePro: Connecting People, Payroll, Projects, and Customer Work</b></a><br><sub>Written from the product perspective of LionCoders, the team behind PeoplePro. An employee joins a company. HR creates the employee record, a…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 2m ago</sub><br><a href="https://dev.to/espresso_run_f9f7e9e1e5b1/im-an-autonomous-ai-agent-given-100-to-earn-one-espresso-cup-7-days-in-625-spent-000-34nb"><b>I'm an autonomous AI agent given $100 to earn one espresso cup. 7 days in: $6.25 spent, $0.00 earned, and a 46-user ad network.</b></a><br><sub>Autonomous Agent Disclosure ( #ABotWroteThis ): I am an autonomous AI agent running an unattended 11-day experiment (Oct 31 – Nov 11, 2026) while…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://www.windowslatest.com/2026/11/06/every-windows-11-app-should-kill-electron-and-discord-just-showed-why-no-starting-screen-and-70-less-ram-even-with-two-accounts-signed-in/"><b>Every Windows 11 app should kill Electron, and Discord just showed why</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://uploadyourram.org"><b>Upload Your RAM</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 14h ago</sub><br><a href="https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/"><b>Beyond code generation: A developer's guide to agentic engineering</b></a><br><sub>Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 17h ago</sub><br><a href="https://www.freecodecamp.org/news/build-pdf-storyboard-generator-javascript/"><b>How to Build a PDF Storyboard Generator Using JavaScript</b></a><br><sub>PDF files are commonly used to share presentations, scripts, reports, lesson materials, comic pages, and other visual documents. But reviewing a…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 9m ago</sub><br><a href="https://dev.to/bbt-hi/apne-claude-subscription-pr-claude-code-ko-osfoundry-worker-kii-trh-claanaa-4i8a"><b>अपने Claude subscription पर Claude Code को osFoundry worker की तरह चलाना</b></a><br><sub>यह setup पूरा होने पर osFoundry में Worker role Claude Code संभालता है। जब plan का कोई step Worker तक पहुँचता है, तो desktop app आपके project…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 9m ago</sub><br><a href="https://dev.to/tabsinone/tabs-in-one-tumce-srv-chrome-ttenb-ekaac-stnbhaat-aannaa-aanni-ram-moklii-kraa-2l2h"><b>Tabs in One: तुमचे सर्व Chrome टॅब एकाच स्तंभात आणा (आणि RAM मोकळी करा)</b></a><br><sub>जर तुम्ही हे वाचत असाल, तर सध्या तुमच्याकडे 40 हून अधिक टॅब उघडे असण्याची शक्यता आहे. Chrome 4 GB RAM खात आहे, लॅपटॉपचा पंखा किंचाळत आहे, आणि 20…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 25m ago</sub><br><a href="https://wherewerewe.app/"><b>Show HN: Where Were We</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 48m ago</sub><br><a href="https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again"><b>Claude Code's &quot;Don't Ask Again&quot; exposes passwords in 1,122 public GitHub files</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 23h ago</sub><br><a href="https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/"><b>Beyond code generation: A developer's guide to agentic engineering</b></a><br><sub>Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 1d ago</sub><br><a href="https://www.freecodecamp.org/news/build-pdf-storyboard-generator-javascript/"><b>How to Build a PDF Storyboard Generator Using JavaScript</b></a><br><sub>PDF files are commonly used to share presentations, scripts, reports, lesson materials, comic pages, and other visual documents. But reviewing a…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794055066" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794087227" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1794055066" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1794087227" width="100%" alt="Thanks for stopping by">
 </div>
