@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1794142504" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1794174477" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1794142504" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1794174477" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1794142504" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1794174477" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 4m ago</sub><br><a href="https://dev.to/peacetemple/we-coded-369-prop-firm-reviews-for-did-they-pay-here-is-what-the-number-can-and-cannot-support-2180"><b>We coded 369 prop firm reviews for &quot;did they pay&quot;. Here is what the number can and cannot support</b></a><br><sub>We coded 369 prop firm reviews for &quot;did they pay&quot;. Here is what the number can and cannot support A review saying &quot;they refused my payout&quot; is…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 5m ago</sub><br><a href="https://dev.to/johnnylemonny/necoz-officially-has-a-new-home-on-dev-follow-along-for-project-updates-typescript-tooling-and-2ppi"><b>Necoz officially has a new home on DEV! Follow along for project updates, TypeScript tooling, and community highlights from the necoz-oss ecosystem. Excited to be building together with @nyaomaru! 🐈🚀</b></a><br><sub>Necoz Has a New Home on DEV! 🐈🎉 nyaomaru nyaomaru nyaomaru Follow for Necoz Nov 8 Necoz Has a New Home on DEV! 🐈🎉 # news # devto # community #…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 7m ago</sub><br><a href="https://dev.to/andreagomez/sqlpad-admin-and-service-tokens-concentrate-database-reach-27"><b>SQLPad admin and service tokens concentrate database reach</b></a><br><sub>SQLPad admin and service tokens concentrate database reach A SQL console can be more sensitive than the databases it reaches. SQLPad stores…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 7m ago</sub><br><a href="https://dev.to/maskedridersystem/splitting-network-paths-with-two-nics-to-get-cuda-working-on-rtx-5060-under-wsl2-on-windows-11-2po3"><b>Splitting Network Paths with Two NICs to Get CUDA Working on RTX 5060 under WSL2 on Windows 11</b></a><br><sub>Introduction While setting up CUDA for an RTX 5060 GPU on Windows 11 + WSL2, I ran into a somewhat unusual situation: The PC has two physical…</sub></td></tr>
 <tr><td width="50%" valign="top"><sub><code>GITHUB</code> 2d ago</sub><br><a href="https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/"><b>Beyond code generation: A developer's guide to agentic engineering</b></a><br><sub>Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 2d ago</sub><br><a href="https://www.freecodecamp.org/news/build-pdf-storyboard-generator-javascript/"><b>How to Build a PDF Storyboard Generator Using JavaScript</b></a><br><sub>PDF files are commonly used to share presentations, scripts, reports, lesson materials, comic pages, and other visual documents. But reviewing a…</sub></td></tr>
 <tr><td width="50%" valign="top"><sub><code>LARAVEL</code> 2d ago</sub><br><a href="https://laravel-news.com/phpstorm-2026-3?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed%3A+laravelnews"><b>PhpStorm 2026.3 Adds an Agent Workspace and PHP 8.6 Support</b></a><br><sub>PhpStorm 2026.3 adds PHP 8.6 support, new Laravel inspections, a Processes tab for queue workers, and Air, a workspace for coding agents. The post…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 2d ago</sub><br><a href="https://www.freecodecamp.org/news/godot-4-roguelike-course-build-a-complete-top-down-action-game/"><b>Godot 4 Roguelike Course – Build a Complete Top-Down Action Game</b></a><br><sub>A top-down action roguelite only works when combat feels sharp, rooms feel connected, and every run asks you to trade power for risk. Godot 4 has…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794142504" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794174477" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1794142504" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1794174477" width="100%" alt="Thanks for stopping by">
 </div>
