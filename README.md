@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1794351385" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1794373785" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1794351385" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1794373785" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1794351385" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1794373785" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 8m ago</sub><br><a href="https://dev.to/gokhanertogan/alerting-on-cron-and-background-jobs-that-never-ran-hung-or-did-nothing-in-6-languages-187j"><b>Alerting on cron and background jobs that never ran, hung, or did nothing (in 6 languages)</b></a><br><sub>Our HTTP alerting was in good shape. 500s, slow endpoints, error rates: all covered. Yet the incidents that hurt most kept coming from somewhere…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 9m ago</sub><br><a href="https://dev.to/webxos/introducing-quantum-frequency-modulator-next-token-prediction-without-attention-3col"><b>Introducing Quantum Frequency Modulator: Next-Token Prediction Without Attention</b></a><br><sub>This single-file PWA that turns words into noise frequencies, collides them in a lattice, and drafts text from the resulting signature — an…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://rvpn.org/"><b>rVPN – stealth VPN with end-to-end encryption</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/"><b>Apple has new Mac app coming to make running local AI models easy</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 5h ago</sub><br><a href="https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/"><b>Git security vulnerabilities announced</b></a><br><sub>Git is releasing updates addressing six security vulnerabilities affecting recursive clones, reference handling, merges, binary patches, and…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 7h ago</sub><br><a href="https://www.freecodecamp.org/news/learn-agentic-coding-with-codex-ai-coding-agents/"><b>Learn Agentic Coding with Codex &amp; AI Coding Agents</b></a><br><sub>AI coding agents such as Codex read your codebase, edit multiple files, and run commands and tests while they work through larger tasks with you.…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 1m ago</sub><br><a href="https://dev.to/sergeyboyko/from-booking-requests-to-confirmed-bookings-designing-reliable-server-side-events-3i67"><b>From Booking Requests to Confirmed Bookings: Designing Reliable Server-Side Events</b></a><br><sub>A form submission is easy to track. A confirmed booking is harder. In booking-based businesses, the customer may submit a request, reserve…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 1m ago</sub><br><a href="https://dev.to/solstack/how-to-get-free-devnet-sol-in-2026-and-why-solana-airdrop-fails-now-1all"><b>How to Get Free Devnet SOL in 2026 (and Why solana airdrop Fails Now)</b></a><br><sub>Most Solana tutorials still start the same way: install the CLI, make a keypair, run solana airdrop 2 . Run that against devnet today (CLI 4.2.2…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 41m ago</sub><br><a href="https://gatezh.com/posts/macos-secure-enclave-ssh-keys/"><b>Protecting SSH Keys with macOS Secure Enclave</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://www.science.org/content/article/deter-bioterrorism-u-s-imposes-new-rules-ordering-synthetic-dna"><b>To deter bioterrorism, U.S. imposes new rules on ordering synthetic DNA</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 11h ago</sub><br><a href="https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/"><b>Git security vulnerabilities announced</b></a><br><sub>Git is releasing updates addressing six security vulnerabilities affecting recursive clones, reference handling, merges, binary patches, and…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 13h ago</sub><br><a href="https://www.freecodecamp.org/news/learn-agentic-coding-with-codex-ai-coding-agents/"><b>Learn Agentic Coding with Codex &amp; AI Coding Agents</b></a><br><sub>AI coding agents such as Codex read your codebase, edit multiple files, and run commands and tests while they work through larger tasks with you.…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794351385" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794373785" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1794351385" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1794373785" width="100%" alt="Thanks for stopping by">
 </div>
