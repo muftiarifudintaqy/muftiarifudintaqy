@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1794373785" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1794404691" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1794373785" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1794404691" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1794373785" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1794404691" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 1m ago</sub><br><a href="https://dev.to/sergeyboyko/from-booking-requests-to-confirmed-bookings-designing-reliable-server-side-events-3i67"><b>From Booking Requests to Confirmed Bookings: Designing Reliable Server-Side Events</b></a><br><sub>A form submission is easy to track. A confirmed booking is harder. In booking-based businesses, the customer may submit a request, reserve…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 1m ago</sub><br><a href="https://dev.to/solstack/how-to-get-free-devnet-sol-in-2026-and-why-solana-airdrop-fails-now-1all"><b>How to Get Free Devnet SOL in 2026 (and Why solana airdrop Fails Now)</b></a><br><sub>Most Solana tutorials still start the same way: install the CLI, make a keypair, run solana airdrop 2 . Run that against devnet today (CLI 4.2.2…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 41m ago</sub><br><a href="https://gatezh.com/posts/macos-secure-enclave-ssh-keys/"><b>Protecting SSH Keys with macOS Secure Enclave</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://www.science.org/content/article/deter-bioterrorism-u-s-imposes-new-rules-ordering-synthetic-dna"><b>To deter bioterrorism, U.S. imposes new rules on ordering synthetic DNA</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 11h ago</sub><br><a href="https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/"><b>Git security vulnerabilities announced</b></a><br><sub>Git is releasing updates addressing six security vulnerabilities affecting recursive clones, reference handling, merges, binary patches, and…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 13h ago</sub><br><a href="https://www.freecodecamp.org/news/learn-agentic-coding-with-codex-ai-coding-agents/"><b>Learn Agentic Coding with Codex &amp; AI Coding Agents</b></a><br><sub>AI coding agents such as Codex read your codebase, edit multiple files, and run commands and tests while they work through larger tasks with you.…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 2m ago</sub><br><a href="https://dev.to/frontendfacile/fablemythos-52-cosa-cambia-davvero-per-chi-scrive-codice-e-perche-i-numeri-contano-meno-delle-176d"><b>Fable/Mythos 5.2: cosa cambia davvero per chi scrive codice (e perché i numeri contano meno delle demo)</b></a><br><sub>Prezzi più bassi, agent swarm da 1.000 istanze, generazione di OS e 3D in Three.js: segnali pratici di un salto di qualità nei modelli…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 2m ago</sub><br><a href="https://dev.to/teiv2000/i-made-a-react-component-that-opens-and-edits-docx-xlsx-pptx-in-the-browser-300k-row-sheet-in-488o"><b>I made a React component that opens and edits DOCX / XLSX / PPTX in the browser. 300k-row sheet in ~300ms, no server, MIT</b></a><br><sub>Why: I needed &quot;customer uploads an XLSX, fix a few cells, save it back&quot; inside a React app. OnlyOffice / Collabora mean running a document server…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://nathan.rs/posts/weight-space-lp/"><b>Can a Linear Program Do Weight-Space Programming?</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="http://databasearchitects.blogspot.com/2026/11/next-level-benchmarking-overfitting.html"><b>Next-Level Benchmarking Overfitting – Thomas Neumann</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 20h ago</sub><br><a href="https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/"><b>Git security vulnerabilities announced</b></a><br><sub>Git is releasing updates addressing six security vulnerabilities affecting recursive clones, reference handling, merges, binary patches, and…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 22h ago</sub><br><a href="https://www.freecodecamp.org/news/learn-agentic-coding-with-codex-ai-coding-agents/"><b>Learn Agentic Coding with Codex &amp; AI Coding Agents</b></a><br><sub>AI coding agents such as Codex read your codebase, edit multiple files, and run commands and tests while they work through larger tasks with you.…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794373785" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794404691" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1794373785" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1794404691" width="100%" alt="Thanks for stopping by">
 </div>
