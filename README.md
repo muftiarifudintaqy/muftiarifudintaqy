@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1794404691" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1794442294" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1794404691" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1794442294" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1794404691" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1794442294" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 2m ago</sub><br><a href="https://dev.to/frontendfacile/fablemythos-52-cosa-cambia-davvero-per-chi-scrive-codice-e-perche-i-numeri-contano-meno-delle-176d"><b>Fable/Mythos 5.2: cosa cambia davvero per chi scrive codice (e perché i numeri contano meno delle demo)</b></a><br><sub>Prezzi più bassi, agent swarm da 1.000 istanze, generazione di OS e 3D in Three.js: segnali pratici di un salto di qualità nei modelli…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 2m ago</sub><br><a href="https://dev.to/teiv2000/i-made-a-react-component-that-opens-and-edits-docx-xlsx-pptx-in-the-browser-300k-row-sheet-in-488o"><b>I made a React component that opens and edits DOCX / XLSX / PPTX in the browser. 300k-row sheet in ~300ms, no server, MIT</b></a><br><sub>Why: I needed &quot;customer uploads an XLSX, fix a few cells, save it back&quot; inside a React app. OnlyOffice / Collabora mean running a document server…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://nathan.rs/posts/weight-space-lp/"><b>Can a Linear Program Do Weight-Space Programming?</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="http://databasearchitects.blogspot.com/2026/11/next-level-benchmarking-overfitting.html"><b>Next-Level Benchmarking Overfitting – Thomas Neumann</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 20h ago</sub><br><a href="https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/"><b>Git security vulnerabilities announced</b></a><br><sub>Git is releasing updates addressing six security vulnerabilities affecting recursive clones, reference handling, merges, binary patches, and…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 22h ago</sub><br><a href="https://www.freecodecamp.org/news/learn-agentic-coding-with-codex-ai-coding-agents/"><b>Learn Agentic Coding with Codex &amp; AI Coding Agents</b></a><br><sub>AI coding agents such as Codex read your codebase, edit multiple files, and run commands and tests while they work through larger tasks with you.…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 3m ago</sub><br><a href="https://dev.to/echof76/python-retrieval-architecture-customer-support-knowledge-base-crawl-boundaries-and-freshness-294g"><b>Python Retrieval Architecture: Customer-Support Knowledge Base Crawl Boundaries (and Freshness)</b></a><br><sub>Short answer: treat crawl boundaries as a product policy, then make freshness an explicit field in retrieval. For a property-management support…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 4m ago</sub><br><a href="https://dev.to/wlz/why-oblivion-remastered-bet-on-two-engines-at-once-the-ue5-skin-over-2006-gamebryo-guts-behind-9-12pg"><b>Why Oblivion Remastered Bet on Two Engines at Once: The UE5 Skin Over 2006 Gamebryo Guts Behind 9 Million Players</b></a><br><sub>Oblivion Remastered runs on two engines at once. Virtuos and Bethesda kept 2006 Gamebryo running the simulation and bolted Unreal Engine 5 on top…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>NODE.JS</code> 7h ago</sub><br><a href="https://nodejs.org/en/blog/release/v26.13.1"><b>Node.js 26.13.1 (LTS)</b></a></td><td width="50%" valign="top"><sub><code>NODE.JS</code> 7h ago</sub><br><a href="https://nodejs.org/en/blog/release/v24.22.3"><b>Node.js 24.22.3 (LTS)</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>LARAVEL</code> 1d ago</sub><br><a href="https://laravel-news.com/laravel-13-42-0?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed%3A+laravelnews"><b>UUID Request Input and Migration Failure Events in Laravel 13.42</b></a><br><sub>Laravel 13.42 adds uuid() and ulid() input helpers, a MigrationFailed event, skip reasons for scheduled tasks, and Uri::origin() for comparing URL…</sub></td><td width="50%" valign="top"><sub><code>GITHUB</code> 1d ago</sub><br><a href="https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/"><b>Git security vulnerabilities announced</b></a><br><sub>Git is releasing updates addressing six security vulnerabilities affecting recursive clones, reference handling, merges, binary patches, and…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794404691" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794442294" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1794404691" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1794442294" width="100%" alt="Thanks for stopping by">
 </div>
