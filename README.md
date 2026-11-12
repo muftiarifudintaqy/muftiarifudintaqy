@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1794442294" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1794494875" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1794442294" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1794494875" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1794442294" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1794494875" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 3m ago</sub><br><a href="https://dev.to/echof76/python-retrieval-architecture-customer-support-knowledge-base-crawl-boundaries-and-freshness-294g"><b>Python Retrieval Architecture: Customer-Support Knowledge Base Crawl Boundaries (and Freshness)</b></a><br><sub>Short answer: treat crawl boundaries as a product policy, then make freshness an explicit field in retrieval. For a property-management support…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 4m ago</sub><br><a href="https://dev.to/wlz/why-oblivion-remastered-bet-on-two-engines-at-once-the-ue5-skin-over-2006-gamebryo-guts-behind-9-12pg"><b>Why Oblivion Remastered Bet on Two Engines at Once: The UE5 Skin Over 2006 Gamebryo Guts Behind 9 Million Players</b></a><br><sub>Oblivion Remastered runs on two engines at once. Virtuos and Bethesda kept 2006 Gamebryo running the simulation and bolted Unreal Engine 5 on top…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>NODE.JS</code> 7h ago</sub><br><a href="https://nodejs.org/en/blog/release/v26.13.1"><b>Node.js 26.13.1 (LTS)</b></a></td><td width="50%" valign="top"><sub><code>NODE.JS</code> 7h ago</sub><br><a href="https://nodejs.org/en/blog/release/v24.22.3"><b>Node.js 24.22.3 (LTS)</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>LARAVEL</code> 1d ago</sub><br><a href="https://laravel-news.com/laravel-13-42-0?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed%3A+laravelnews"><b>UUID Request Input and Migration Failure Events in Laravel 13.42</b></a><br><sub>Laravel 13.42 adds uuid() and ulid() input helpers, a MigrationFailed event, skip reasons for scheduled tasks, and Uri::origin() for comparing URL…</sub></td><td width="50%" valign="top"><sub><code>GITHUB</code> 1d ago</sub><br><a href="https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/"><b>Git security vulnerabilities announced</b></a><br><sub>Git is releasing updates addressing six security vulnerabilities affecting recursive clones, reference handling, merges, binary patches, and…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 9m ago</sub><br><a href="https://dev.to/frontendfacile/lascia-che-sia-il-css-a-decidere-il-layout-gallerie-che-si-adattano-al-numero-di-elementi-2n71"><b>Lascia che sia il CSS a decidere il layout: gallerie che si adattano al numero di elementi</b></a><br><sub>Con :has(), :nth-child() e una custom property puoi ottenere griglie “intelligenti” senza classi modificatrici, props o condizioni in JavaScript.…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 9m ago</sub><br><a href="https://dev.to/tillping-hq/a-signed-payment-can-still-unlock-the-wrong-thing-15b9"><b>A signed payment can still unlock the wrong thing</b></a><br><sub>A valid signature tells you where a payment notification came from. Your app still has to decide what that payment buys. In your sandbox, try…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 29m ago</sub><br><a href="https://www.moddb.com/mods/openq4/downloads/openq4-0141-windows-x64"><b>Abandoned Quake 4 expansion finished by modders and now playable</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 35m ago</sub><br><a href="https://chipsandcheese.com/p/talking-zen-6-with-mike-clark-at"><b>Talking Zen 6 with Mike Clark at AMD In-Depth</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>NODE.JS</code> 1h ago</sub><br><a href="https://nodejs.org/en/blog/release/v27.0.0-alpha.0.1.0"><b>Node.js 27.0.0-alpha.0.1.0 (Alpha)</b></a></td><td width="50%" valign="top"><sub><code>NODE.JS</code> 22h ago</sub><br><a href="https://nodejs.org/en/blog/release/v26.13.1"><b>Node.js 26.13.1 (LTS)</b></a></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794442294" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794494875" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1794442294" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1794494875" width="100%" alt="Thanks for stopping by">
 </div>
