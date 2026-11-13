@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1794548092" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1794578791" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1794548092" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1794578791" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1794548092" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1794578791" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 4m ago</sub><br><a href="https://dev.to/crjl11/copiar-una-base-nosql-no-es-exportar-json-lo-que-aprendimos-haciendo-backups-de-firestore-n5p"><b>Copiar una base NoSQL no es exportar JSON: lo que aprendimos haciendo backups de Firestore</b></a><br><sub>Autor: Carlos Jimenez Laura Curso: Base de Datos II · Universidad Privada de Tacna Actividad: Estrategias de copia de seguridad NoSQL,…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 4m ago</sub><br><a href="https://dev.to/toolifyhubtools/building-a-dual-mode-ai-background-remover-combining-webassembly-client-side-privacy-with-fast-4imk"><b>Building a Dual-Mode AI Background Remover: Combining WebAssembly Client-Side Privacy with Fast Cloud Inference</b></a><br><sub>Most online background removers rely on a single architecture: cloud-only GPU inference . Every uploaded image is sent to a remote server,…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 40m ago</sub><br><a href="https://ice-wm.org/"><b>IceWM</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://folklore.org/Switcher.html"><b>Switcher (2004)</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 5h ago</sub><br><a href="https://github.blog/news-insights/company-news/github-availability-report-october-2026/"><b>GitHub availability report: October 2026</b></a><br><sub>In October, we experienced eight incidents that resulted in degraded performance across GitHub services. The post GitHub availability report:…</sub></td><td width="50%" valign="top"><sub><code>GITHUB</code> 7h ago</sub><br><a href="https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/"><b>Build once, run on any agent: A practical guide to agent skills</b></a><br><sub>Agent skills capture repeatable engineering work in files teams can review and reuse, while tools, project context, and permissions remain…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 6m ago</sub><br><a href="https://dev.to/neticslabs/kubernetes-v137-hardens-the-volume-you-already-mount-6fb"><b>Kubernetes v1.37 Hardens the Volume You Already Mount</b></a><br><sub>TL;DR Kubernetes v1.37 ships two storage-security features: emptyDir permission modes and bind mount options (announcement). bindMountOptions puts…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 6m ago</sub><br><a href="https://dev.to/sushant-me/googles-okf-cut-llm-hallucination-81-on-dfir-telemetry-because-the-format-not-the-model-was-5cpf"><b>Google's OKF cut LLM hallucination 81% on DFIR telemetry — because the format, not the model, was the problem</b></a><br><sub>DFIR tooling still hands its telemetry to LLMs as one big JSON dump. At scale that is a context-exhaustion engine: latency climbs, the model…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 15m ago</sub><br><a href="https://garymarcus.substack.com/p/breaking-eli-lilly-ceo-becomes-latest"><b>Eli Lilly CEO pushes back on Dario Amodei's ludicrous medical claims</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://github.com/Christ10-8/reflota"><b>Show HN: Reflota – Open-source data recovery for NTFS/FAT disks with phased copy</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 3h ago</sub><br><a href="https://www.freecodecamp.org/news/schema-drift-vs-semantic-drift-in-data-pipelines/"><b>Schema Drift vs. Semantic Drift in Data Pipelines</b></a><br><sub>When a column is removed from a source database or dataset, the next pipeline run usually fails, making the problem easy to detect. But when a…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 3h ago</sub><br><a href="https://www.freecodecamp.org/news/build-image-storyboard-to-pdf-tool-javascript/"><b>How to Build a Browser-Based Image Storyboard to PDF Tool Using JavaScript</b></a><br><sub>Before anyone films a video, shoots an ad or draws the final pages of a comic, someone usually sketches the plan as a storyboard: one picture per…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794548092" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794578791" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1794548092" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1794578791" width="100%" alt="Thanks for stopping by">
 </div>
