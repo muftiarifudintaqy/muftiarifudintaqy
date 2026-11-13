@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1794578791" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1794612055" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1794578791" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1794612055" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1794578791" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1794612055" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 6m ago</sub><br><a href="https://dev.to/neticslabs/kubernetes-v137-hardens-the-volume-you-already-mount-6fb"><b>Kubernetes v1.37 Hardens the Volume You Already Mount</b></a><br><sub>TL;DR Kubernetes v1.37 ships two storage-security features: emptyDir permission modes and bind mount options (announcement). bindMountOptions puts…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 6m ago</sub><br><a href="https://dev.to/sushant-me/googles-okf-cut-llm-hallucination-81-on-dfir-telemetry-because-the-format-not-the-model-was-5cpf"><b>Google's OKF cut LLM hallucination 81% on DFIR telemetry — because the format, not the model, was the problem</b></a><br><sub>DFIR tooling still hands its telemetry to LLMs as one big JSON dump. At scale that is a context-exhaustion engine: latency climbs, the model…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 15m ago</sub><br><a href="https://garymarcus.substack.com/p/breaking-eli-lilly-ceo-becomes-latest"><b>Eli Lilly CEO pushes back on Dario Amodei's ludicrous medical claims</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://github.com/Christ10-8/reflota"><b>Show HN: Reflota – Open-source data recovery for NTFS/FAT disks with phased copy</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 3h ago</sub><br><a href="https://www.freecodecamp.org/news/schema-drift-vs-semantic-drift-in-data-pipelines/"><b>Schema Drift vs. Semantic Drift in Data Pipelines</b></a><br><sub>When a column is removed from a source database or dataset, the next pipeline run usually fails, making the problem easy to detect. But when a…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 3h ago</sub><br><a href="https://www.freecodecamp.org/news/build-image-storyboard-to-pdf-tool-javascript/"><b>How to Build a Browser-Based Image Storyboard to PDF Tool Using JavaScript</b></a><br><sub>Before anyone films a video, shoots an ad or draws the final pages of a comic, someone usually sketches the plan as a storyboard: one picture per…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 2m ago</sub><br><a href="https://dev.to/krishna_kumar_ecc1e764686/planning-a-website-for-a-tiles-sanitaryware-or-building-materials-dealer-1f93"><b>Planning a website for a tiles, sanitaryware or building materials dealer</b></a><br><sub>A dealer’s website should help a customer answer three practical questions before making a trip: do you handle the kind of material I need, what…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 3m ago</sub><br><a href="https://dev.to/opti-behavior/what-is-a-rage-click-7-causes-dead-clicks-and-fixes-5eo9"><b>What Is a Rage Click? 7 Causes, Dead Clicks and Fixes</b></a><br><sub>We build Opti-Behavior, the WordPress plugin discussed here. Originally published on optiuser.com. A rage click is when a visitor clicks the same…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 14m ago</sub><br><a href="https://www.joshka.net/cell-borders/"><b>Terminal borders that don't cost a cell</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 42m ago</sub><br><a href="https://claude.com/resources/articles/claude-meetings"><b>Claude Meetings</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 11h ago</sub><br><a href="https://www.freecodecamp.org/news/speed-up-ci-in-the-age-of-ai-written-code/"><b>How to Speed Up CI in the Age of AI-Written Code</b></a><br><sub>Coding agents now write code faster than most CI pipelines can check it. In April 2026, GitHub COO Kyle Daigle said that his platform was handling…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 12h ago</sub><br><a href="https://www.freecodecamp.org/news/schema-drift-vs-semantic-drift-in-data-pipelines/"><b>Schema Drift vs. Semantic Drift in Data Pipelines</b></a><br><sub>When a column is removed from a source database or dataset, the next pipeline run usually fails, making the problem easy to detect. But when a…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794578791" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794612055" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1794578791" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1794612055" width="100%" alt="Thanks for stopping by">
 </div>
