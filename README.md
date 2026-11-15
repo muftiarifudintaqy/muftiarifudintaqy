@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1794693855" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1794720201" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1794693855" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1794720201" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1794693855" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1794720201" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 5m ago</sub><br><a href="https://dev.to/jeitobr/validar-cpf-e-cnpj-em-javascript-o-modulo-11-explicado-e-o-cnpj-alfanumerico-de-2026-5282"><b>Validar CPF e CNPJ em JavaScript: o módulo 11 explicado (e o CNPJ alfanumérico de 2026)</b></a><br><sub>Se você já montou um formulário de cadastro no Brasil, já precisou validar CPF e CNPJ no front-end antes de enviar os dados. A boa notícia: a…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 6m ago</sub><br><a href="https://dev.to/bukolaprecious/clerk-vs-better-auth-in-2026-which-auth-solution-should-next-dgi"><b>Clerk vs Better Auth in 2026- Which Auth Solution Should Next</b></a><br><sub>Authentication for a Next.js application starts with sign-up and login forms, then grows into session management, password recovery, social login,…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 42m ago</sub><br><a href="https://x.com/i/broadcasts/2brajgZlOKRMka"><b>SpaceX Catches the Starship to end Flight 15</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 3h ago</sub><br><a href="https://www.thedartmouth.com/article/2026/11/gandhi-fagell-guarini-will-not-admit-math-ph-d-cohort-this-year"><b>Dartmouth (Guarini) will not admit math PhD cohort this year</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 6h ago</sub><br><a href="https://www.freecodecamp.org/news/build-and-train-a-glm-53-flash-model-from-scratch-with-python/"><b>Build and Train a GLM-5.3-Flash Model From Scratch with Python</b></a><br><sub>GLM-5.3-Flash combines linear and sparse attention, a mixture-of-experts design, and manifold constrained hyperconnections. A scaled-down version…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 1d ago</sub><br><a href="https://www.freecodecamp.org/news/speed-up-ci-in-the-age-of-ai-written-code/"><b>How to Speed Up CI in the Age of AI-Written Code</b></a><br><sub>Coding agents now write code faster than most CI pipelines can check it. In April 2026, GitHub COO Kyle Daigle said that his platform was handling…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 4m ago</sub><br><a href="https://dev.to/viklogix/restoring-engineering-craftsmanship-amid-ai-driven-speed-demands-5fl3"><b>Restoring Engineering Craftsmanship Amid AI-Driven Speed Demands</b></a><br><sub>The Anatomy of the Shift: From Craftsmanship to Velocity When a developer remarks that the spark of coding has gone out, they are rarely mourning…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 5m ago</sub><br><a href="https://dev.to/kalemi/actionssetup-python-version-ranges-cache-keys-that-go-cold-and-free-threaded-builds-2719"><b>actions/setup-python: version ranges, cache keys that go cold, and free-threaded builds</b></a><br><sub>actions/setup-python installs a CPython, PyPy or GraalPy version, puts it on PATH, and can cache pip, pipenv or poetry dependencies keyed on your…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 43m ago</sub><br><a href="https://runkiri.com/"><b>Kiri – The Modern Container Runtime</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 44m ago</sub><br><a href="https://github.com/matheuzgomes/gawain"><b>Show HN: Gawain – Require type hints on all Python variables</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 13h ago</sub><br><a href="https://www.freecodecamp.org/news/build-and-train-a-glm-53-flash-model-from-scratch-with-python/"><b>Build and Train a GLM-5.3-Flash Model From Scratch with Python</b></a><br><sub>GLM-5.3-Flash combines linear and sparse attention, a mixture-of-experts design, and manifold constrained hyperconnections. A scaled-down version…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 2d ago</sub><br><a href="https://www.freecodecamp.org/news/speed-up-ci-in-the-age-of-ai-written-code/"><b>How to Speed Up CI in the Age of AI-Written Code</b></a><br><sub>Coding agents now write code faster than most CI pipelines can check it. In April 2026, GitHub COO Kyle Daigle said that his platform was handling…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794693855" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794720201" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1794693855" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1794720201" width="100%" alt="Thanks for stopping by">
 </div>
