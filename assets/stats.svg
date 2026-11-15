@@ -18,8 +18,8 @@
 <rect x="369.6" y="22" width="160.8" height="76" rx="12" fill="#0D0D12" stroke="#24242C"/>
 <rect x="381.6" y="34" width="2.5" height="11" rx="1" fill="rgb(191,90,242)"/>
 <text x="389.6" y="43" class="mono" font-size="9" letter-spacing="1.6" fill="#8E8E99">CURRENT STREAK</text>
-<text x="381.6" y="74" font-size="26" font-weight="700" letter-spacing="-.8" fill="#F5F5F7">12</text>
-<text x="381.6" y="90" class="mono" font-size="9.5" fill="#55555F">days in a row</text>
+<text x="381.6" y="74" font-size="26" font-weight="700" letter-spacing="-.8" fill="#F5F5F7">0</text>
+<text x="381.6" y="90" class="mono" font-size="9.5" fill="#55555F">start one today</text>
 <g transform="translate(508.4000000000001 66)"><g class="fl"><polygon points="0,-7 8,-3 0,1 -8,-3" fill="rgb(220,103,255)"/><polygon points="-8,-3 0,1 0,10 -8,6" fill="rgb(134,63,169)"/><polygon points="8,-3 0,1 0,10 8,6" fill="rgb(172,81,218)"/></g></g></g><g class="t" style="animation-delay:0.24s">
 <rect x="542.4000000000001" y="22" width="160.8" height="76" rx="12" fill="#0D0D12" stroke="#24242C"/>
 <rect x="554.4000000000001" y="34" width="2.5" height="11" rx="1" fill="rgb(223,95,186)"/>
