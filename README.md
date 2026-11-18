@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1794929934" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1794962490" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1794929934" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1794962490" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1794929934" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1794962490" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 7m ago</sub><br><a href="https://dev.to/navetteforyou/build-time-ai-how-we-validate-5000-prices-across-8-languages-without-a-server-2f25"><b>Build-Time AI: How We Validate 5,000 Prices Across 8 Languages Without a Server</b></a><br><sub>The problem We run a transport booking site in Morocco — navetteforyou.com . Eight languages, 641 pages, thousands of prices. One wrong number and…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 7m ago</sub><br><a href="https://dev.to/kursatyz/the-12-day-open-source-pledge-alibaba-locks-qwen4-max-behind-a-closed-api-1267"><b>The 12-Day Open-Source Pledge: Alibaba Locks Qwen4-Max Behind a Closed API</b></a><br><sub>Twelve days ago, Alibaba's Qwen team told the open-source developer community that its models would stick to open source to the end. Today they…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 32m ago</sub><br><a href="https://alloyhtml.com/example.html"><b>Show HN: Alloy CSS, dialogs, menus and tabs that work with JavaScript off</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 35m ago</sub><br><a href="https://www.propublica.org/article/federal-womens-prison-sexual-abuse-reform-dublin-bop"><b>A US Federal Women's Prison Became a &quot;Rape Club&quot;</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>NODE.JS</code> 7h ago</sub><br><a href="https://nodejs.org/en/blog/release/v27.0.0-alpha.0.1.1"><b>Node.js 27.0.0-alpha.0.1.1 (Alpha)</b></a></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 15h ago</sub><br><a href="https://www.freecodecamp.org/news/build-nlp-pipeline-python-therapy-notes/"><b>How to Build an NLP Pipeline in Python to Analyze Therapy Progress Notes</b></a><br><sub>Therapy progress notes are written records of what happened during a therapy session. They may include what a client said, what the therapist…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 10m ago</sub><br><a href="https://dev.to/road_up_37a1405c7befd9346/how-to-use-the-google-search-console-performance-report-to-measure-one-website-change-325p"><b>How to use the Google Search Console Performance report to measure one website change</b></a><br><sub>Use the Google Search Console Performance report to record what changed in clicks, impressions, CTR and average position around one website…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 11m ago</sub><br><a href="https://dev.to/cybermax/how-we-made-a-sled-game-whose-leaderboard-cannot-be-faked-1icg"><b>How we made a sled game whose leaderboard cannot be faked</b></a><br><sub>Free game of the week: Sled Volt. It is a 3D downhill sled runner that runs in a browser tab. This is how it is built, and the one design decision…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://wiki.archiveteam.org/index.php/Apple_Discussions"><b>Archive Team is archiving the Apple Support Community (closes November 20, 2026)</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://github.com/microsoft/onnxruntime"><b>Microsoft's ONNX Runtime has disappeared from GitHub</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 6h ago</sub><br><a href="https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/"><b>Maintainers don't need more AI bug reports. They need fixes.</b></a><br><sub>In the Codename MDASH pilot, GitHub and Microsoft turned thousands of raw AI findings into 99 checked, private reports with suggested fixes for…</sub></td><td width="50%" valign="top"><sub><code>GITHUB</code> 6h ago</sub><br><a href="https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/"><b>Building the Agent Host Protocol for sessions that continue across devices</b></a><br><sub>Discover how we built the open Agent Host Protocol to keep your agent sessions accessible across editors, apps, phones, and the cloud. The post…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794929934" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1794962490" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1794929934" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1794962490" width="100%" alt="Thanks for stopping by">
 </div>
