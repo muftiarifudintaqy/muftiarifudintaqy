@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1795015044" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1795046363" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1795015044" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1795046363" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1795015044" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1795046363" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 8m ago</sub><br><a href="https://dev.to/tomxiaoyz/one-card-one-context-sat-in-the-docs-for-two-weeks-then-one-day-cost-420m-tokens-and-the-35d9"><b>&quot;One card, one context&quot; sat in the docs for two weeks. Then one day cost ~420M tokens, and the guard got bypassed the day after</b></a><br><sub>The short version: a rule that limits how long an agent's context gets cannot live at the &quot;entrance&quot;. It has to live inside the command the agent…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 8m ago</sub><br><a href="https://dev.to/receivesmss/charge-only-when-it-is-delivered-hold-then-capture-balances-in-laravel-nfd"><b>Charge only when it is delivered: hold-then-capture balances in Laravel</b></a><br><sub>If you sell something that may or may not be delivered, charging up front and refunding later works, but it is ugly. We run an SMS verification…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 34m ago</sub><br><a href="https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026"><b>'Human' Is Cambridge Dictionary's Word of the Year 2026</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://www.sciencedaily.com/releases/2026/11/261110042543.htm"><b>Energy drinks linked to 11 times more reports of cardiac arrest</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 21h ago</sub><br><a href="https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/"><b>Maintainers don't need more AI bug reports. They need fixes.</b></a><br><sub>In the Codename MDASH pilot, GitHub and Microsoft turned thousands of raw AI findings into 99 checked, private reports with suggested fixes for…</sub></td><td width="50%" valign="top"><sub><code>GITHUB</code> 21h ago</sub><br><a href="https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/"><b>Building the Agent Host Protocol for sessions that continue across devices</b></a><br><sub>Discover how we built the open Agent Host Protocol to keep your agent sessions accessible across editors, apps, phones, and the cloud. The post…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 6m ago</sub><br><a href="https://dev.to/cjdarklord/four-ways-to-estimate-a-development-project-and-what-each-is-good-for-iph"><b>Four ways to estimate a development project (and what each is good for)</b></a><br><sub>Every estimate argument starts the same way: &quot;it's just a simple app&quot;. Then three weeks later the same app has a payment provider, an admin panel,…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 6m ago</sub><br><a href="https://dev.to/daxharrington5274/how-to-fix-presigned-downloads-filename-content-type-and-content-disposition-4g7i"><b>How to Fix Presigned Downloads: Filename, Content-Type, and Content-Disposition</b></a><br><sub>Large receipt exports change the answer. A 20 KB CSV that opens in a tab is annoying; a 2 GB PDF that opens in a tab can pin a browser process and…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://keycybermonk.com/edu"><b>Why educational system is broken</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering"><b>LLM Assisted Reverse Engineering</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 8h ago</sub><br><a href="https://www.freecodecamp.org/news/learn-data-structures-and-algorithms-in-python-with-visualizations/"><b>Learn Data Structures and Algorithms in Python with Visualizations</b></a><br><sub>Data structures such as arrays, linked lists, stacks, queues, hash tables, trees, heaps, and graphs determine how a program stores data and how…</sub></td><td width="50%" valign="top"><sub><code>LARAVEL</code> 1d ago</sub><br><a href="https://laravel-news.com/laravel-13-43-0?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed%3A+laravelnews"><b>JSON Schema Validation Rules and a RetryFor Attribute in Laravel 13.43</b></a><br><sub>Laravel 13.43 turns JSON schemas into validation rules, adds a #[RetryFor] queue attribute and releaseUsingBackoff(), and ships several security…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1795015044" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1795046363" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1795015044" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1795046363" width="100%" alt="Thanks for stopping by">
 </div>
