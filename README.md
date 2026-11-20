@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1795118822" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1795155052" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1795118822" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1795155052" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1795118822" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1795155052" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 5m ago</sub><br><a href="https://dev.to/emuzinun/what-is-host-header-injection-detection-to-exploitation-with-burp-2d1k"><b>What Is Host Header Injection? Detection to Exploitation with Burp</b></a><br><sub>There's a small line inside every HTTP request: the &quot;Host&quot; header. When your browser goes to a site, it tells the server &quot;this is where I've…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 6m ago</sub><br><a href="https://dev.to/emuzinun/what-is-hashcat-installation-and-basic-usage-nlf"><b>What Is Hashcat? Installation and Basic Usage</b></a><br><sub>Hashcat is a password cracking tool. If you have a hash value and want to find the password, it's one of the tools you turn to. Systems don't…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://www.youtube.com/watch?v=lwfewYL7X0o"><b>Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine"><b>The 98% Slot Machine: How Paid Advertising Became an Extraction Tax</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 2h ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-scrape-websites-in-python-with-olostep/"><b>How to Scrape Websites in Python with Olostep</b></a><br><sub>Web scraping in Python usually starts with requests and Beautiful Soup. While this works well for static pages, it gets harder when a site loads…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 3h ago</sub><br><a href="https://www.freecodecamp.org/news/build-pdf-password-protector-javascript/"><b>How to Build a Browser-Based PDF Password Protector Using JavaScript</b></a><br><sub>Contracts, invoices, medical reports, and scanned ID cards are often converted to PDF files. And if one of them ends up in the wrong inbox or on a…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 2m ago</sub><br><a href="https://dev.to/dhee161286/xcode-instruments-in-practice-profiling-and-optimizing-ios-apps-2g2h"><b>Xcode Instruments in Practice: Profiling and Optimizing iOS Apps</b></a><br><sub>Most performance bugs I've chased in production iOS apps didn't come from code that was obviously slow. They came from code that was fine with…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 2m ago</sub><br><a href="https://dev.to/haruwalks/what-to-give-someone-who-misses-a-place-5hl6"><b>What to give someone who misses a place</b></a><br><sub>One evening a stranger paid me about a dollar for a letter. I don't know how she found the shop. There's no trail: no pitch of mine she replied…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 50m ago</sub><br><a href="https://grapheneos.social/@GrapheneOS/117645038299496084"><b>Google is pushing OEMs against GrapheneOS and bootloader unlocking</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://ffmpeg.org/download.html#release_9.1"><b>FFmpeg 9.1 'Gauss'</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 8h ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-generate-synthetic-healthcare-data-using-synthea-a-hands-on-tutorial/"><b>How to Generate Synthetic Healthcare Data Using Synthea: A Hands On Tutorial</b></a><br><sub>Healthcare generates huge amounts of data every day, from patient visits and lab results to diagnoses, medications, and medical imaging. For…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 12h ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-scrape-websites-in-python-with-olostep/"><b>How to Scrape Websites in Python with Olostep</b></a><br><sub>Web scraping in Python usually starts with requests and Beautiful Soup. While this works well for static pages, it gets harder when a site loads…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1795118822" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1795155052" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1795118822" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1795155052" width="100%" alt="Thanks for stopping by">
 </div>
