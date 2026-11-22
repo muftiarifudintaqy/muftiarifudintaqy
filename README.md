@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1795356905" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1795389706" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1795356905" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1795389706" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1795356905" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1795389706" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 4m ago</sub><br><a href="https://dev.to/gde/stop-using-one-prompt-for-every-photo-local-image-classification-before-calling-firebase-ai-logic-20gk"><b>Stop Using One Prompt for Every Photo! Local Image Classification Before Calling Firebase AI Logic GenerativeModel</b></a><br><sub>I upload images of places, wrestlers, and general objects to the application. When uploading images of people, I want the Gemini model to generate…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 5m ago</sub><br><a href="https://dev.to/cynora/gemini-api-returns-empty-text-with-finishreason-maxtokens-thinking-tokens-use-the-limit-first-461a"><b>Gemini API returns empty text with finishReason MAX_TOKENS: thinking tokens use the limit first</b></a><br><sub>On Gemini models that think, the tokens spent on reasoning count against max_output_tokens before the first word of the answer is written. The…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://arstechnica.com/tech-policy/2026/11/prisons-get-ok-to-jam-contraband-phones-ctia-says-nearby-phones-will-be-jammed-too/"><b>Prisons get OK to jam contraband phones</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 4h ago</sub><br><a href="https://simonwillison.net/2026/Nov/21/muru/"><b>Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 3m ago</sub><br><a href="https://dev.to/quotelinks/a-free-stock-news-api-with-sentiment-and-topic-tags-no-api-key-16lc"><b>A free stock news API with sentiment and topic tags (no API key)</b></a><br><sub>Most &quot;stock news API&quot; tutorials start the same way: sign up, verify your email, paste a key into an env var, then find out the free tier gives you…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 4m ago</sub><br><a href="https://dev.to/aifetchly_ai/i-built-a-plugin-system-for-a-local-first-desktop-ai-agent-heres-what-small-teams-actually-2ib4"><b>I built a plugin system for a local-first desktop AI agent — here's what small teams actually automate with it</b></a><br><sub>Hi DEV — I'm Peijian Xu, CTO of the aiFetchly team. This is a #showdev post about something we've been building in the open: aiFetchly, an…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 10m ago</sub><br><a href="https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3"><b>Progress map for the Lean formalization of Alessandro Masullo's manuscript</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 15m ago</sub><br><a href="https://www.gl-inet.com/en-us/blogs/blog/glinet-security-notice-2026-11-20"><b>GL.iNet Security Notice 2026-11-20</b></a></td></tr>
 <tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 2d ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-write-an-api-migration-guide/"><b>How to Write an API Migration Guide (With a Real Example)</b></a><br><sub>When an API releases a new version, every developer using it has to update their code. If they only get a changelog entry that says “pagination…</sub></td><td width="50%" valign="top"><sub><code>LARAVEL</code> 2d ago</sub><br><a href="https://laravel-news.com/php-8-6-release-day?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed%3A+laravelnews"><b>PHP 8.6 is released!</b></a><br><sub>PHP 8.6 is out with partial function application, a clamp() function, a Duration class, JSON error locations, readonly property defaults, and new…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1795356905" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1795389706" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1795356905" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1795389706" width="100%" alt="Thanks for stopping by">
 </div>
