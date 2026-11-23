@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1795414788" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1795476716" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1795414788" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1795476716" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1795414788" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1795476716" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 4m ago</sub><br><a href="https://dev.to/ashwar_sadh_f7abe6f82c8e9/audio-before-the-socket-is-ready-queueing-websocket-messages-until-the-session-says-so-and-a-2h4j"><b>Audio before the socket is ready: queueing WebSocket messages until the session says so, and a final transcript with a deadline</b></a><br><sub>Disclosure: I'm the developer of Bolo, and this post is published from my account. It was drafted and published by an AI agent working on my…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 6m ago</sub><br><a href="https://dev.to/plainworkstudio/your-chat-history-is-not-a-prompt-library-a-3-layer-system-for-solo-operators-4adg"><b>Your Chat History Is Not a Prompt Library: A 3-Layer System for Solo Operators</b></a><br><sub>Ask a solo operator where their best prompts live, and you get one of three answers: in a chat with myself, in a note on my phone, or &quot;I just…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://phoenix.labri.fr/software/tempo/"><b>A Partial Evaluator for C</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://www.facebook.com/shugvermonte/posts/the-deflock-america-group-with-over-840k-members-has-been-suspended-by-meta-what/10165140280736049/"><b>DeFlock Amerca Facebook Group Suspended as a Dangerous Organization</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 2d ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-write-an-api-migration-guide/"><b>How to Write an API Migration Guide (With a Real Example)</b></a><br><sub>When an API releases a new version, every developer using it has to update their code. If they only get a changelog entry that says “pagination…</sub></td><td width="50%" valign="top"><sub><code>LARAVEL</code> 3d ago</sub><br><a href="https://laravel-news.com/php-8-6-release-day?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed%3A+laravelnews"><b>PHP 8.6 is released!</b></a><br><sub>PHP 8.6 is out with partial function application, a clamp() function, a Duration class, JSON error locations, readonly property defaults, and new…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 4m ago</sub><br><a href="https://dev.to/antipas_ringer_73b7b1f677/how-undohaven-encrypts-snapshots-so-a-host-never-sees-file-names-1d7k"><b>How UndoHaven encrypts snapshots so a host never sees file names</b></a><br><sub>I build UndoHaven; this post is about how it handles encryption. UndoHaven is an unofficial third-party CLI for dsh, a local agent runtime. It…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 4m ago</sub><br><a href="https://dev.to/ethanbrooks1486/chunk-freshness-for-retrieval-architecture-tuning-legal-contract-review-in-postgres-451f"><b>Chunk Freshness for Retrieval Architecture — Tuning Legal Contract Review in Postgres</b></a><br><sub>Short answer: use a hybrid retrieval pipeline with versioned chunks, metadata filters, and a small relevance test set. In a legal contract review…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 43m ago</sub><br><a href="https://spectator.com/article/the-beauty-of-artists-studios/"><b>The Beauty of Artists' Studios</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 59m ago</sub><br><a href="https://stalw.art/blog/microsoft-exchange-replacement/"><b>Stalwart is now a drop-in replacement for Microsoft Exchange</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 8h ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-use-the-github-cli-with-github-actions/"><b>How to Use the GitHub CLI with GitHub Actions</b></a><br><sub>GitHub CLI is a command-line tool that lets you manage GitHub's web features right in your local terminal. You can manage repositories, issues,…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 8h ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-standardize-mlops-reporting-and-evaluation-using-an-open-source-python-package/"><b>How to Standardize MLOps Reporting and Evaluation using an Open Source Python Package</b></a><br><sub>Working on machine learning projects in production can be a bit challenging. If you've built models in real-world environments, you know how…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1795414788" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1795476716" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1795414788" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1795476716" width="100%" alt="Thanks for stopping by">
 </div>
