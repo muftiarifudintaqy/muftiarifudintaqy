@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1795510421" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1795557641" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1795510421" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1795557641" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1795510421" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1795557641" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 4m ago</sub><br><a href="https://dev.to/mobeenahmedgondal/why-california-pays-double-time-and-most-states-pay-nothing-extra-per-day-1a59"><b>Why California Pays Double Time and Most States Pay Nothing Extra Per Day</b></a><br><sub>I built my overtime calculator around one rule I assumed was universal: work more than eight hours in a day and you get paid extra. It took one…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 4m ago</sub><br><a href="https://dev.to/purple8tech/can-you-build-an-ai-application-in-2-hours-lets-put-it-to-the-test-1e0k"><b>Can You Build an AI Application in 2 Hours? Let's Put It to the Test.</b></a><br><sub>We built an AI backend. Now we're curious what you can build with it in 2 hours. You know how sometimes you start building something, and before…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://fzakaria.com/2026/11/23/2035-came-early"><b>2035 Came Early</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 4h ago</sub><br><a href="https://www.phoronix.com/review/amd-epyc-9006-7601"><b>AMD EPYC Zen 6 vs. Zen 1 Performance: 12.1x Geo Mean in Less Than 10 Years</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 18h ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-use-the-github-cli-with-github-actions/"><b>How to Use the GitHub CLI with GitHub Actions</b></a><br><sub>GitHub CLI is a command-line tool that lets you manage GitHub's web features right in your local terminal. You can manage repositories, issues,…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 18h ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-standardize-mlops-reporting-and-evaluation-using-an-open-source-python-package/"><b>How to Standardize MLOps Reporting and Evaluation using an Open Source Python Package</b></a><br><sub>Working on machine learning projects in production can be a bit challenging. If you've built models in real-world environments, you know how…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 1m ago</sub><br><a href="https://dev.to/fathomnews/ai-chatbot-claude-tried-to-break-out-of-test-limits-anthropic-found-5cg8"><b>AI Chatbot Claude Tried To Break Out Of Test Limits, Anthropic Found</b></a><br><sub>Anthropic , which builds the Claude AI assistant, found recent Claude models reached outside weakened sandboxes in 21% to 32% of tests, a warning…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 1m ago</sub><br><a href="https://dev.to/jun_liu_ca219b73a8f1489b5/clock-drift-is-the-silent-saboteur-a-field-engineers-checklist-for-time-on-linux-2fhg"><b>Clock Drift Is the Silent Saboteur: A Field Engineer's Checklist for Time on Linux</b></a><br><sub>Some tickets make no sense until you check the clock. A customer reports the site is &quot;insecure&quot;, but the certificate is valid. Another says a…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 36m ago</sub><br><a href="https://apnews.com/article/cia-cyberattack-unclassified-system-bfa6d3b02e3b0e2779dfb613c900bd77"><b>CIA Hacked</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 53m ago</sub><br><a href="https://www.anthropic.com/research/working-with-ai"><b>Working with AI</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 6h ago</sub><br><a href="https://github.blog/news-insights/company-news/these-are-the-gifts-developers-will-actually-want/"><b>These are the gifts developers will actually want</b></a><br><sub>The developer you're shopping for hasn’t shared their holiday wish list with you yet? Check out these gifts, plus our Black Friday discount all…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 6h ago</sub><br><a href="https://www.freecodecamp.org/news/pass-the-microsoft-azure-ai-fundamentals-ai-901-certification-exam/"><b>Pass the Microsoft Azure AI Fundamentals (AI-901) Certification Exam</b></a><br><sub>The Microsoft Azure AI Fundamentals (AI-901) is an entry-level certification that covers AI concepts, Microsoft Foundry, and a set of Azure AI…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1795510421" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1795557641" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1795510421" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1795557641" width="100%" alt="Thanks for stopping by">
 </div>
