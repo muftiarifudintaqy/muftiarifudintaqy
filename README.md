@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1795591779" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1795641289" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1795591779" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1795641289" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1795591779" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1795641289" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 1m ago</sub><br><a href="https://dev.to/genanywhere/drone-photos-to-pls-cadd-the-pipeline-behind-a-161-kv-tower-twin-2oga"><b>Drone Photos to PLS-CADD: The Pipeline Behind a 161 kV Tower Twin</b></a><br><sub>The job was a flood-damaged 161 kV transmission tower in Missouri, a circuit that could not be switched off, and a hospital on the same feed. The…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 1m ago</sub><br><a href="https://dev.to/jigs1996/lazy-loading-katex-mermaid-and-highlightjs-in-a-markdown-preview-12cd"><b>Lazy-loading KaTeX, Mermaid and highlight.js in a markdown preview</b></a><br><sub>A markdown preview that supports maths, diagrams and code highlighting has a weight problem. KaTeX, Mermaid and highlight.js together are far…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 3h ago</sub><br><a href="https://gpu-demo-gallery.pages.dev/"><b>Show HN: Old Nvidia and ATI tech demos, running again in the browser</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 3h ago</sub><br><a href="https://www.intruder.io/research/taking-over-us-treasury-subdomains-for-3-each"><b>Taking over US Treasury subdomains for $3 each</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 7h ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-set-up-and-customize-light-and-dark-mode-in-shadcn-with-next-js/"><b>How to Set Up and Customize Light and Dark Mode in shadcn with Next.js</b></a><br><sub>If you've created a Next.js project with shadcn/ui recently, there's a good chance dark mode is already set up. I noticed this while looking…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 9h ago</sub><br><a href="https://www.freecodecamp.org/news/how-phishing-attacks-work/"><b>How Phishing Attacks Actually Work (And How Developers Can Spot Them)</b></a><br><sub>Phishing attacks are getting harder to recognize. And no, it isn't just because hackers have become better at hiding spelling mistakes. Some…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 3m ago</sub><br><a href="https://dev.to/deploysaga/self-hosting-calcom-with-docker-what-the-setup-actually-involves-4h48"><b>Self-Hosting Cal.com With Docker: What the Setup Actually Involves</b></a><br><sub>Scheduling is one of the few SaaS categories where self-hosting is genuinely practical: the tool is open source, the data is yours, and the…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 3m ago</sub><br><a href="https://dev.to/polarkamonitor/an-agent-that-pays-for-its-own-timestamps-x402-on-a-cpu-mined-coin-1ki9"><b>An agent that pays for its own timestamps: x402 on a CPU-mined coin</b></a><br><sub>Every night at 23:41 an agent we run, on OpenClaw on a Mac mini, makes a list of the SHA-256 of every file in its notes, takes the SHA-256 of that…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://danprice.ai/blog/opus-symphony"><b>Spending 35B Opus 5.5 Tokens to Write a Symphony</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://scottaaronson.blog/?p=10379"><b>Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 5h ago</sub><br><a href="https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai/"><b>Art of play in the age of AI</b></a><br><sub>Now that code ships faster than ever, you have more time to spend on projects just for the fun of it. Here's what we can learn through that…</sub></td><td width="50%" valign="top"><sub><code>GITHUB</code> 6h ago</sub><br><a href="https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/"><b>How to choose the next safe step in application modernization</b></a><br><sub>Learn how to assess a legacy application, choose a bounded modernization step, and reuse the method with a GitHub Copilot agent skill. The post…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1795591779" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1795641289" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1795591779" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1795641289" width="100%" alt="Thanks for stopping by">
 </div>
