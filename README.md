@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1795557641" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1795591779" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1795557641" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1795591779" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1795557641" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1795591779" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 1m ago</sub><br><a href="https://dev.to/fathomnews/ai-chatbot-claude-tried-to-break-out-of-test-limits-anthropic-found-5cg8"><b>AI Chatbot Claude Tried To Break Out Of Test Limits, Anthropic Found</b></a><br><sub>Anthropic , which builds the Claude AI assistant, found recent Claude models reached outside weakened sandboxes in 21% to 32% of tests, a warning…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 1m ago</sub><br><a href="https://dev.to/jun_liu_ca219b73a8f1489b5/clock-drift-is-the-silent-saboteur-a-field-engineers-checklist-for-time-on-linux-2fhg"><b>Clock Drift Is the Silent Saboteur: A Field Engineer's Checklist for Time on Linux</b></a><br><sub>Some tickets make no sense until you check the clock. A customer reports the site is &quot;insecure&quot;, but the certificate is valid. Another says a…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 36m ago</sub><br><a href="https://apnews.com/article/cia-cyberattack-unclassified-system-bfa6d3b02e3b0e2779dfb613c900bd77"><b>CIA Hacked</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 53m ago</sub><br><a href="https://www.anthropic.com/research/working-with-ai"><b>Working with AI</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 6h ago</sub><br><a href="https://github.blog/news-insights/company-news/these-are-the-gifts-developers-will-actually-want/"><b>These are the gifts developers will actually want</b></a><br><sub>The developer you're shopping for hasn’t shared their holiday wish list with you yet? Check out these gifts, plus our Black Friday discount all…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 6h ago</sub><br><a href="https://www.freecodecamp.org/news/pass-the-microsoft-azure-ai-fundamentals-ai-901-certification-exam/"><b>Pass the Microsoft Azure AI Fundamentals (AI-901) Certification Exam</b></a><br><sub>The Microsoft Azure AI Fundamentals (AI-901) is an entry-level certification that covers AI concepts, Microsoft Foundry, and a set of Azure AI…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 1m ago</sub><br><a href="https://dev.to/genanywhere/drone-photos-to-pls-cadd-the-pipeline-behind-a-161-kv-tower-twin-2oga"><b>Drone Photos to PLS-CADD: The Pipeline Behind a 161 kV Tower Twin</b></a><br><sub>The job was a flood-damaged 161 kV transmission tower in Missouri, a circuit that could not be switched off, and a hospital on the same feed. The…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 1m ago</sub><br><a href="https://dev.to/jigs1996/lazy-loading-katex-mermaid-and-highlightjs-in-a-markdown-preview-12cd"><b>Lazy-loading KaTeX, Mermaid and highlight.js in a markdown preview</b></a><br><sub>A markdown preview that supports maths, diagrams and code highlighting has a weight problem. KaTeX, Mermaid and highlight.js together are far…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 3h ago</sub><br><a href="https://gpu-demo-gallery.pages.dev/"><b>Show HN: Old Nvidia and ATI tech demos, running again in the browser</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 3h ago</sub><br><a href="https://www.intruder.io/research/taking-over-us-treasury-subdomains-for-3-each"><b>Taking over US Treasury subdomains for $3 each</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 7h ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-set-up-and-customize-light-and-dark-mode-in-shadcn-with-next-js/"><b>How to Set Up and Customize Light and Dark Mode in shadcn with Next.js</b></a><br><sub>If you've created a Next.js project with shadcn/ui recently, there's a good chance dark mode is already set up. I noticed this while looking…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 9h ago</sub><br><a href="https://www.freecodecamp.org/news/how-phishing-attacks-work/"><b>How Phishing Attacks Actually Work (And How Developers Can Spot Them)</b></a><br><sub>Phishing attacks are getting harder to recognize. And no, it isn't just because hackers have become better at hiding spelling mistakes. Some…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1795557641" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1795591779" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1795557641" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1795591779" width="100%" alt="Thanks for stopping by">
 </div>
