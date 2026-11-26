@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1795677531" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1795727027" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1795677531" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1795727027" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1795677531" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1795727027" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 6m ago</sub><br><a href="https://dev.to/finn_x_c3ba83524e0aa41589/i-audited-gammas-400-free-ai-credits-exports-in-python-667x-mode-gap-embedded-fntdata-fonts-lk2"><b>I Audited Gamma’s 400 Free AI Credits &amp; Exports in Python: 6.67x Mode Gap, Embedded .fntdata Fonts &amp; Variable-Height PDFs</b></a><br><sub>Most older Gamma walkthroughs still repeat outdated heuristics ( &quot;40 credits per deck&quot; or &quot;Plus includes unlimited AI&quot; ). Under Gamma’s current…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 6m ago</sub><br><a href="https://dev.to/kargatharaaakash/move-the-never-lines-out-of-your-claudemd-and-into-settingsjson-and-make-your-hooks-exit-2-1ghl"><b>Move the NEVER lines out of your CLAUDE.md and into settings.json (and make your hooks exit 2)</b></a><br><sub>If your CLAUDE.md says &quot;NEVER read .env&quot; in capital letters, Anthropic has now told you twice that it's the wrong place for it. Lydia Hallie from…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://fosscomics.com/posts/17.%20Lions%27%20Commentary%20on%20Unix/"><b>Lions' Commentary on Unix: Why It Was Secretly Copied for 20 Years</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 4h ago</sub><br><a href="https://chipsandcheese.com/p/qualcomms-oryon-3-reaches-the-top"><b>Qualcomm's Oryon 3 Reaches the Top</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 11h ago</sub><br><a href="https://www.freecodecamp.org/news/how-wearables-can-turn-your-body-into-a-dashboard/"><b>How Wearables Can Turn Your Body Into a Dashboard</b></a><br><sub>Have you ever found yourself waking up feeling perfectly normal and then being told by your wearable app that you've slept poorly? And perhaps not…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 11h ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-deploy-to-amazon-s3-using-gitlab-ci-cd-and-aws-oidc-without-aws-access-keys/"><b>How to Deploy to Amazon S3 Using GitLab CI/CD and AWS OIDC Without AWS Access Keys</b></a><br><sub>When you're learning AWS, Amazon S3 is one of the services you're likely to come across early. Storage is one of the core components of cloud…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 1m ago</sub><br><a href="https://dev.to/yirenlabs/godot-4-texture-was-downsized-on-import-as-its-width-exceeded-the-importable-size-limit-1j1k"><b>Godot 4: Texture was downsized on import as its width exceeded the importable size limit</b></a><br><sub>What you see When a texture finishes importing, the Editor logs Texture was downsized on import as its width (N pixels) exceeded the importable…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 1m ago</sub><br><a href="https://dev.to/tbebekis/the-immeasurable-value-of-declarative-programming-3ghd"><b>The Immeasurable Value of Declarative Programming</b></a><br><sub>1. Two Ways to Tell the Computer What You Want There are two ways to build software. The first is to tell the computer how to do something, step…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://karpathy.ai/usaciv/"><b>The USA as a Civilizations-esque map</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://github.com/eisenzopf/rvoip"><b>Rvoip 0.5 the complete VoIP stack in Rust</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>LARAVEL</code> 7h ago</sub><br><a href="https://laravel-news.com/pun-php-toolchain?utm_medium=feed&amp;utm_source=feedpress.me&amp;utm_campaign=Feed%3A+laravelnews"><b>Pun: Format, Lint, and Analyze PHP With One Rust Binary</b></a><br><sub>Pun is a Rust binary in public beta that formats, lints, and analyzes PHP 8.3+ code, installs Composer packages, and reads one pun.toml config…</sub></td><td width="50%" valign="top"><sub><code>NODE.JS</code> 11h ago</sub><br><a href="https://nodejs.org/en/blog/release/v27.0.0-alpha.0.2.0"><b>Node.js 27.0.0-alpha.0.2.0 (Alpha)</b></a></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1795677531" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1795727027" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1795677531" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1795727027" width="100%" alt="Thanks for stopping by">
 </div>
