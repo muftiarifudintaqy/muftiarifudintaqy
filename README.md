@@ -18,24 +18,24 @@
 
 <img src="assets/stack.svg?v=4" width="100%" alt="Tech stack">
 
-<img src="assets/stats.svg?v=1795641289" width="100%" alt="GitHub contribution stats">
+<img src="assets/stats.svg?v=1795677531" width="100%" alt="GitHub contribution stats">
 
-<img src="assets/skyline.svg?v=1795641289" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
+<img src="assets/skyline.svg?v=1795677531" width="100%" alt="Contributions over the last 12 months as an isometric skyline">
 
-<img src="assets/news.svg?v=1795641289" width="100%" alt="Dev news">
+<img src="assets/news.svg?v=1795677531" width="100%" alt="Dev news">
 
 </div>
 
 <!--NEWS:START-->
 <table>
-<tr><td width="50%" valign="top"><sub><code>DEV</code> 3m ago</sub><br><a href="https://dev.to/deploysaga/self-hosting-calcom-with-docker-what-the-setup-actually-involves-4h48"><b>Self-Hosting Cal.com With Docker: What the Setup Actually Involves</b></a><br><sub>Scheduling is one of the few SaaS categories where self-hosting is genuinely practical: the tool is open source, the data is yours, and the…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 3m ago</sub><br><a href="https://dev.to/polarkamonitor/an-agent-that-pays-for-its-own-timestamps-x402-on-a-cpu-mined-coin-1ki9"><b>An agent that pays for its own timestamps: x402 on a CPU-mined coin</b></a><br><sub>Every night at 23:41 an agent we run, on OpenClaw on a Mac mini, makes a list of the SHA-256 of every file in its notes, takes the SHA-256 of that…</sub></td></tr>
-<tr><td width="50%" valign="top"><sub><code>HN</code> 1h ago</sub><br><a href="https://danprice.ai/blog/opus-symphony"><b>Spending 35B Opus 5.5 Tokens to Write a Symphony</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://scottaaronson.blog/?p=10379"><b>Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening</b></a></td></tr>
-<tr><td width="50%" valign="top"><sub><code>GITHUB</code> 5h ago</sub><br><a href="https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai/"><b>Art of play in the age of AI</b></a><br><sub>Now that code ships faster than ever, you have more time to spend on projects just for the fun of it. Here's what we can learn through that…</sub></td><td width="50%" valign="top"><sub><code>GITHUB</code> 6h ago</sub><br><a href="https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/"><b>How to choose the next safe step in application modernization</b></a><br><sub>Learn how to assess a legacy application, choose a bounded modernization step, and reuse the method with a GitHub Copilot agent skill. The post…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>DEV</code> 6m ago</sub><br><a href="https://dev.to/finn_x_c3ba83524e0aa41589/i-audited-gammas-400-free-ai-credits-exports-in-python-667x-mode-gap-embedded-fntdata-fonts-lk2"><b>I Audited Gamma’s 400 Free AI Credits &amp; Exports in Python: 6.67x Mode Gap, Embedded .fntdata Fonts &amp; Variable-Height PDFs</b></a><br><sub>Most older Gamma walkthroughs still repeat outdated heuristics ( &quot;40 credits per deck&quot; or &quot;Plus includes unlimited AI&quot; ). Under Gamma’s current…</sub></td><td width="50%" valign="top"><sub><code>DEV</code> 6m ago</sub><br><a href="https://dev.to/kargatharaaakash/move-the-never-lines-out-of-your-claudemd-and-into-settingsjson-and-make-your-hooks-exit-2-1ghl"><b>Move the NEVER lines out of your CLAUDE.md and into settings.json (and make your hooks exit 2)</b></a><br><sub>If your CLAUDE.md says &quot;NEVER read .env&quot; in capital letters, Anthropic has now told you twice that it's the wrong place for it. Lydia Hallie from…</sub></td></tr>
+<tr><td width="50%" valign="top"><sub><code>HN</code> 2h ago</sub><br><a href="https://fosscomics.com/posts/17.%20Lions%27%20Commentary%20on%20Unix/"><b>Lions' Commentary on Unix: Why It Was Secretly Copied for 20 Years</b></a></td><td width="50%" valign="top"><sub><code>HN</code> 4h ago</sub><br><a href="https://chipsandcheese.com/p/qualcomms-oryon-3-reaches-the-top"><b>Qualcomm's Oryon 3 Reaches the Top</b></a></td></tr>
+<tr><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 11h ago</sub><br><a href="https://www.freecodecamp.org/news/how-wearables-can-turn-your-body-into-a-dashboard/"><b>How Wearables Can Turn Your Body Into a Dashboard</b></a><br><sub>Have you ever found yourself waking up feeling perfectly normal and then being told by your wearable app that you've slept poorly? And perhaps not…</sub></td><td width="50%" valign="top"><sub><code>FREECODECAMP</code> 11h ago</sub><br><a href="https://www.freecodecamp.org/news/how-to-deploy-to-amazon-s3-using-gitlab-ci-cd-and-aws-oidc-without-aws-access-keys/"><b>How to Deploy to Amazon S3 Using GitLab CI/CD and AWS OIDC Without AWS Access Keys</b></a><br><sub>When you're learning AWS, Amazon S3 is one of the services you're likely to come across early. Storage is one of the core components of cloud…</sub></td></tr>
 </table>
 <!--NEWS:END-->
 
 <div align="center">
-<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1795641289" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
+<a href="https://muftzyxslwly.my.id/snake.html"><img src="assets/pulse.svg?v=1795677531" width="100%" alt="Commit Snake: a snake that eats every day I committed code. Click to play it yourself."></a>
 
-<img src="assets/footer.svg?v=1795641289" width="100%" alt="Thanks for stopping by">
+<img src="assets/footer.svg?v=1795677531" width="100%" alt="Thanks for stopping by">
 </div>
